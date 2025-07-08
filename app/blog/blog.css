@@ -1,0 +1,31 @@
+.tip-box {
+  background-color: rgba(var(--primary-rgb), 0.05);
+  border: 1px solid rgba(var(--primary-rgb), 0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.tip-box h4 {
+  font-family: "Galano Grotesque", sans-serif;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.tip-box p {
+  margin-bottom: 0;
+}
+
+.prose img {
+  border-radius: 0.5rem;
+}
+
+.prose a {
+  color: hsl(var(--primary));
+  text-decoration: none;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}

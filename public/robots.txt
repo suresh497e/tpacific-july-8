@@ -1,0 +1,16 @@
+# robots.txt for Transpacific Immigration
+User-agent: *
+
+# Allow all public pages
+Allow: /
+
+# Disallow test and debug pages
+Disallow: /test-*
+Disallow: /debug-*
+
+# Disallow any potential admin areas
+Disallow: /admin/
+Disallow: /dashboard/
+
+# Sitemap location
+Sitemap: https://transpacificimmigration.com/sitemap.xml

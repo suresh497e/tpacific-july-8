@@ -301,8 +301,9 @@ import {
   Home,
   HeartHandshake,
   //Link,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
+import ImageGrid from "@/components/ImageGrid";
 
 export const metadata: Metadata = {
   title: "About Transpacific | Your Gateway to Global Opportunities",
@@ -455,6 +456,11 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* office images */}
+      <section>
+        <ImageGrid />
       </section>
 
       {/* Leadership Section */}

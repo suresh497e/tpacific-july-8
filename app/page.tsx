@@ -12,6 +12,9 @@ import GetInTouch from "@/components/get-in-touch"
 import { DebugTheme } from "@/components/debug-theme"
 import type { Metadata } from "next"
 import { withMetadataValidation } from "@/lib/metadata-utils"
+import Script from 'next/script'
+import StatsBanner from "@/components/icef"
+
 
 export const metadata: Metadata = withMetadataValidation({
   title: "Study Abroad",
@@ -37,6 +40,9 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Hero />
+      <div className="relative h-20 md:h-40">
+        <StatsBanner />
+      </div>
       <StatsSection className={sectionClasses.white} />
       <ProcessSection className={sectionClasses.gray} />
       <OfficeAnnouncement className={sectionClasses.white} />

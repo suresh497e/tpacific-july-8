@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Globe, GraduationCap, MapPin } from "lucide-react"
 import { SafeImage } from "@/components/safe-image"
+import Script from "next/script"
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -160,6 +161,8 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+       
     </div>
   )
 }

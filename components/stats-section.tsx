@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { motion, useInView } from "framer-motion"
 import { Award, Users, Globe, Building } from "lucide-react"
+import Script from "next/script"
 
 interface StatsSectionProps {
   className?: string
@@ -56,6 +57,8 @@ export default function StatsSection({ className }: StatsSectionProps) {
           }}
         ></div>
       </div>
+
+     
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -164,6 +167,7 @@ export default function StatsSection({ className }: StatsSectionProps) {
           </motion.div>
         </div>
       </div>
+      
     </div>
   )
 }

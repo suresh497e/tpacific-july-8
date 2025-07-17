@@ -304,6 +304,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import ImageGrid from "@/components/ImageGrid";
+import TeamSection from "@/components/TeamSection";
 
 export const metadata: Metadata = {
   title: "About Transpacific | Your Gateway to Global Opportunities",
@@ -461,6 +462,12 @@ export default function AboutPage() {
       {/* office images */}
       <section>
         <ImageGrid />
+      </section>
+
+      {/* team */}
+
+      <section>
+        <TeamSection />
       </section>
 
       {/* Leadership Section */}

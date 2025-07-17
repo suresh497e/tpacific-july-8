@@ -75,12 +75,12 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src="/images/transpacific-logo-new.png"
+                src="/bluelogo.png"
                 alt="Transpacific Immigration Services"
                 width={180}
                 height={48}
                 priority
-                className="h-12 w-auto"
+                className="h-12 md:h-28 w-auto"
                 unoptimized
               />
             </Link>

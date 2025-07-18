@@ -61,19 +61,19 @@ export default function StatsBanner() {
         <div className="hidden md:grid md:grid-cols-4 gap-6 text-center">
           <div>
             <p className="text-4xl font-bold text-blue-900">10+</p>
-            <p className="text-gray-600 text-2xl">Years of Experience</p>
+            <p className="text-gray-600 md:text-lg">Years of Experience</p>
           </div>
           <div>
             <p className="text-4xl font-bold text-blue-900">9+</p>
-            <p className="text-gray-600 text-2xl">Countries</p>
+            <p className="text-gray-600 md:text-lg">Countries</p>
           </div>
           <div>
             <p className="text-4xl font-bold text-blue-900">4</p>
-            <p className="text-gray-600 text-2xl">Branches</p>
+            <p className="text-gray-600 md:text-lg">Branches</p>
           </div>
           <div>
             <p className="text-4xl font-bold text-blue-900">100%</p>
-            <p className="text-gray-600 text-2xl">Student Satisfaction</p>
+            <p className="text-gray-600 md:text-lg">Student Satisfaction</p>
           </div>
         </div>
       </div>

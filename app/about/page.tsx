@@ -307,6 +307,7 @@ import ImageGrid from "@/components/ImageGrid";
 import TeamSection from "@/components/TeamSection";
 //import Head from "next/head";
 import { cannonicalUrls } from "@/lib/cannonical";
+import { baseUrl } from "@/lib/baseUrl";
 
 export const metadata: Metadata = {
   title:
@@ -322,6 +323,12 @@ export const metadata: Metadata = {
     description: "Discover how Transpacific has guided thousands of Indian students with expert university and visa support.",
     url: cannonicalUrls.about,
     type: "website",
+     images: [{
+      url: `${baseUrl}/bluelogo.png`,
+      width: 800,
+      height: 600,
+      alt: "home page"
+    }]
   },
   twitter: {
     title: "Study Abroad",

@@ -16,6 +16,8 @@ import Script from 'next/script'
 import StatsBanner from "@/components/icef"
 //import Head from 'next/head';
 import { cannonicalUrls } from "@/lib/cannonical"
+import { baseUrl } from "@/lib/baseUrl"
+
 
 export const metadata: Metadata = {
   title: "Study Abroad & Immigration Services for Indian Students | Transpacific",
@@ -29,6 +31,12 @@ export const metadata: Metadata = {
     description: "Get expert help to study in Canada, UK, USA, Australia, Ireland & New Zealand. Trusted by thousands of Indian students since 2010.",
     url: cannonicalUrls.home,
     type: "website",
+    images: [{
+      url: `${baseUrl}/bluelogo.png`,
+      width: 800,
+      height: 600,
+      alt: "about page"
+    }]
   },
   twitter: {
     title: "Study Abroad",

@@ -1,3 +1,4 @@
+import { baseUrl } from "@/lib/baseUrl"
 import UKUniversityPage from "./university-page"
 
 import { cannonicalUrls } from "@/lib/cannonical"
@@ -15,6 +16,12 @@ export const metadata: Metadata = {
     description: "World-class UK education with strong post-study career pathways and visa assistance.",
     url: cannonicalUrls.uk,
     type: "website",
+    images: [{
+              url: `${baseUrl}/bluelogo.png`,
+              width: 800,
+              height: 600,
+              alt: "united-kingdom page"
+            }]
   },
   twitter: {
     title: "Study Abroad",

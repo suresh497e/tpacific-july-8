@@ -42,6 +42,7 @@ const emeraldGreen = "#007848";
 
 import { cannonicalUrls } from "@/lib/cannonical";
 import { Metadata } from "next";
+import { baseUrl } from "@/lib/baseUrl";
 
 export const metadata: Metadata = {
   title:
@@ -59,6 +60,12 @@ export const metadata: Metadata = {
       "Ireland offers future-ready education, stay-back visas, and booming tech careers — start your journey with Transpacific.",
     url: cannonicalUrls.ireland,
     type: "website",
+    images: [{
+              url: `${baseUrl}/bluelogo.png`,
+              width: 800,
+              height: 600,
+              alt: "ireland page"
+            }]
   },
   twitter: {
     title: "Study Abroad",

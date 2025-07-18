@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react"
 import { motion, useInView } from "framer-motion"
 import { Award, Users, Globe, Building } from "lucide-react"
 import Script from "next/script"
+import CertifiedProfessionals from "./certified-professionals"
+import CertifiedProfessionals2 from "./certified-professionals2"
 
 interface StatsSectionProps {
   className?: string
@@ -166,6 +168,8 @@ export default function StatsSection({ className }: StatsSectionProps) {
             <div className="text-lg font-medium">Offices</div>
           </motion.div>
         </div>
+
+        <CertifiedProfessionals2 />
       </div>
       
     </div>

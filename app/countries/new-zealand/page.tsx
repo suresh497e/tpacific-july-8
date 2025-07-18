@@ -1,3 +1,4 @@
+import { baseUrl } from "@/lib/baseUrl"
 import NewZealandUniversityPage from "./university-page"
 
 
@@ -16,6 +17,12 @@ export const metadata: Metadata = {
     description: " Affordable education, post-study visas, and career growth — all in one of the world’s most beautiful countries.",
     url: cannonicalUrls.newzealand,
     type: "website",
+    images: [{
+              url: `${baseUrl}/bluelogo.png`,
+              width: 800,
+              height: 600,
+              alt: "newzealand page"
+            }]
   },
   twitter: {
     title: "Study Abroad",

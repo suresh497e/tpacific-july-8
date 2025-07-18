@@ -6,6 +6,7 @@ import CountryCard from "@/components/country-card"
 
 import { cannonicalUrls } from "@/lib/cannonical"
 import { Metadata } from "next"
+import { baseUrl } from "@/lib/baseUrl"
 
 export const metadata: Metadata = {
   title: "Compare Top Study Abroad Destinations for Indian Students | Transpacific",
@@ -19,6 +20,12 @@ export const metadata: Metadata = {
     description: " Explore and compare countries for your education journey — Canada, UK, USA, Australia, Ireland, and New Zealand.",
     url: cannonicalUrls.countries,
     type: "website",
+    images: [{
+          url: `${baseUrl}/bluelogo.png`,
+          width: 800,
+          height: 600,
+          alt: "countries page"
+        }]
   },
   twitter: {
     title: "Study Abroad",

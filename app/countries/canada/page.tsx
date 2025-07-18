@@ -1,3 +1,4 @@
+import { baseUrl } from "@/lib/baseUrl"
 import CanadaUniversityPage from "./university-page"
 
 import { cannonicalUrls } from "@/lib/cannonical"
@@ -15,6 +16,12 @@ export const metadata: Metadata = {
     description: " Apply to top Canadian universities with expert visa guidance and permanent residency options.",
     url: cannonicalUrls.canada,
     type: "website",
+    images: [{
+              url: `${baseUrl}/bluelogo.png`,
+              width: 800,
+              height: 600,
+              alt: "canada page"
+            }]
   },
   twitter: {
     title: "Study Abroad",

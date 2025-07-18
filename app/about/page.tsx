@@ -305,29 +305,51 @@ import {
 } from "lucide-react";
 import ImageGrid from "@/components/ImageGrid";
 import TeamSection from "@/components/TeamSection";
+//import Head from "next/head";
+import { cannonicalUrls } from "@/lib/cannonical";
 
 export const metadata: Metadata = {
-  title: "About Transpacific | Your Gateway to Global Opportunities",
+  title:
+    " About Transpacific | Trusted Global Education Consultants Since 2010",
   description:
-    "Learn about Transpacific Immigration Services - your trusted partner for international education and immigration services with over a decade of experience.",
+    "Learn about Transpacific’s mission, team, and proven track record in guiding Indian students to top international universities across six countries.",
+  keywords: ["study abroad", "visa", "immigration"],
+  alternates: {
+    canonical: cannonicalUrls.about,
+  },
+  openGraph: {
+     title: "About Transpacific | Trusted Global Education Consultants Since 2010",
+    description: "Discover how Transpacific has guided thousands of Indian students with expert university and visa support.",
+    url: cannonicalUrls.about,
+    type: "website",
+  },
+  twitter: {
+    title: "Study Abroad",
+    description: "Expert visa guidance",
+  },
 };
 
 export default function AboutPage() {
   return (
-    <main className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-slate-800 to-slate-900 py-4 md:py-4">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              About us
-            </h1>
-          </div>
-        </div>
-      </section>
+    <>
+      {/* <Head>
+        <link rel="canonical" href={cannonicalUrls.about} />
+      </Head> */}
 
-      {/* Our Story Section */}
-      {/* <section className="py-16 bg-gray-50">
+      <main className="flex flex-col min-h-screen">
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-r from-slate-800 to-slate-900 py-4 md:py-4">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                About us
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Story Section */}
+        {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-stretch">
             <div className="flex flex-col justify-center">
@@ -366,112 +388,114 @@ export default function AboutPage() {
         </div>
       </section> */}
 
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-            {/* Left side - Text content */}
-            <div className="flex flex-col justify-center h-full">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">
-                Our Story
-              </h2>
-              <div className="space-y-6 text-lg leading-relaxed flex-grow">
-                <p>
-                  Transpacific Immigration Services was founded with a vision to
-                  bridge the gap between ambitious students in India and
-                  world-class educational opportunities abroad. Starting as a
-                  dedicated team serving students across major Indian cities, we
-                  have grown to become a trusted name in international education
-                  consulting.
-                </p>
-                <p>
-                  From our humble beginnings, Transpacific has expanded to{" "}
-                  <strong>multiple offices across India and New Zealand</strong>
-                  , including major cities like Mumbai, Delhi, Bangalore, Pune,
-                  and Auckland. Our growth reflects our commitment to providing
-                  genuine guidance and tailored solutions for students aspiring
-                  to study abroad.
-                </p>
-                <p>
-                  <strong>With a team of 50+ professionals</strong>, we proudly
-                  support ambitious students in achieving their global education
-                  dreams across New Zealand, Australia, Canada, the UK, USA, and
-                  Ireland.
-                </p>
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+              {/* Left side - Text content */}
+              <div className="flex flex-col justify-center h-full">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">
+                  Our Story
+                </h2>
+                <div className="space-y-6 text-lg leading-relaxed flex-grow">
+                  <p>
+                    Transpacific Immigration Services was founded with a vision
+                    to bridge the gap between ambitious students in India and
+                    world-class educational opportunities abroad. Starting as a
+                    dedicated team serving students across major Indian cities,
+                    we have grown to become a trusted name in international
+                    education consulting.
+                  </p>
+                  <p>
+                    From our humble beginnings, Transpacific has expanded to{" "}
+                    <strong>
+                      multiple offices across India and New Zealand
+                    </strong>
+                    , including major cities like Mumbai, Delhi, Bangalore,
+                    Pune, and Auckland. Our growth reflects our commitment to
+                    providing genuine guidance and tailored solutions for
+                    students aspiring to study abroad.
+                  </p>
+                  <p>
+                    <strong>With a team of 50+ professionals</strong>, we
+                    proudly support ambitious students in achieving their global
+                    education dreams across New Zealand, Australia, Canada, the
+                    UK, USA, and Ireland.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            {/* Right side - Image */}
-            <div className="flex items-center h-full">
-              <div className="rounded-lg overflow-hidden shadow-xl w-full h-full">
-                <div
-                  className="relative w-full h-full"
-                  style={{ minHeight: "400px" }}
-                >
-                  <Image
-                    src="/about_hero.png"
-                    alt="Students collaborating and studying together"
-                    fill
-                    style={{ objectFit: "cover" }}
-                    className="w-full h-full object-cover"
-                  />
+              {/* Right side - Image */}
+              <div className="flex items-center h-full">
+                <div className="rounded-lg overflow-hidden shadow-xl w-full h-full">
+                  <div
+                    className="relative w-full h-full"
+                    style={{ minHeight: "400px" }}
+                  >
+                    <Image
+                      src="/about_hero.png"
+                      alt="Students collaborating and studying together"
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Our Mission & Vision */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Our Mission & Vision
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-6 text-slate-800">
-                Our Mission
-              </h3>
-              <p className="text-lg leading-relaxed text-gray-700 stats-intro-text">
-                To be the most trusted and customer-focused international
-                education consultancy, providing comprehensive guidance and
-                support to students across India and beyond. We are committed to
-                making global education accessible, transparent, and successful
-                for every student we serve.
-              </p>
+        {/* Our Mission & Vision */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Our Mission & Vision
+              </h2>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-6 text-slate-800">
-                Our Vision
-              </h3>
-              <p className="text-lg leading-relaxed text-gray-700 stats-intro-text">
-                To help as many students as possible with genuine information
-                and expert advice to realize their dream of studying abroad and
-                to join the global community of successful international
-                graduates who make a positive impact worldwide.
-              </p>
+            <div className="grid md:grid-cols-2 gap-12">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold mb-6 text-slate-800">
+                  Our Mission
+                </h3>
+                <p className="text-lg leading-relaxed text-gray-700 stats-intro-text">
+                  To be the most trusted and customer-focused international
+                  education consultancy, providing comprehensive guidance and
+                  support to students across India and beyond. We are committed
+                  to making global education accessible, transparent, and
+                  successful for every student we serve.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <h3 className="text-2xl font-bold mb-6 text-slate-800">
+                  Our Vision
+                </h3>
+                <p className="text-lg leading-relaxed text-gray-700 stats-intro-text">
+                  To help as many students as possible with genuine information
+                  and expert advice to realize their dream of studying abroad
+                  and to join the global community of successful international
+                  graduates who make a positive impact worldwide.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* office images */}
-      <section>
-        <ImageGrid />
-      </section>
+        {/* office images */}
+        <section>
+          <ImageGrid />
+        </section>
 
-      {/* team */}
+        {/* team */}
 
-      <section>
-        <TeamSection />
-      </section>
+        <section>
+          <TeamSection />
+        </section>
 
-      {/* Leadership Section */}
-      {/* <section className="py-16 bg-white">
+        {/* Leadership Section */}
+        {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -568,216 +592,217 @@ export default function AboutPage() {
         </div>
       </section> */}
 
-      {/* Why Choose Transpacific */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Why Choose Transpacific?
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto stats-intro-text">
-              We don't just file applications. We mentor futures and guide you
-              through every step of your international education journey.
-            </p>
-          </div>
+        {/* Why Choose Transpacific */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Why Choose Transpacific?
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto stats-intro-text">
+                We don't just file applications. We mentor futures and guide you
+                through every step of your international education journey.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex justify-center mb-4">
-                  <CheckCircle className="h-12 w-12 text-primary" />
-                </div>
-                <h3 className="font-semibold text-xl mb-3">
-                  Expertise You Can Trust
-                </h3>
-                <p className="text-gray-600">
-                  With a strong presence in New Zealand and India, our licensed
-                  advisers and trained counsellors navigate global immigration
-                  systems with ease.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex justify-center mb-4">
-                  <GraduationCap className="h-12 w-12 text-primary" />
-                </div>
-                <h3 className="font-semibold text-xl mb-3">
-                  Tailored Guidance
-                </h3>
-                <p className="text-gray-600">
-                  We understand that no two journeys are the same. Your goals,
-                  your budget, your background — everything is considered in our
-                  advice.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex justify-center mb-4">
-                  <Globe className="h-12 w-12 text-primary" />
-                </div>
-                <h3 className="font-semibold text-xl mb-3">
-                  End-to-End Support
-                </h3>
-                <p className="text-gray-600">
-                  From your first consultation to your first job abroad, we're
-                  with you — offering everything from visa filing to
-                  post-arrival support.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex justify-center mb-4">
-                  <FileText className="h-12 w-12 text-primary" />
-                </div>
-                <h3 className="font-semibold text-xl mb-3">Proven Results</h3>
-                <p className="text-gray-600">
-                  With thousands of visas approved and a 98% satisfaction rate,
-                  Transpacific is a name students trust across borders.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex justify-center mb-4">
-                  <HeartHandshake className="h-12 w-12 text-primary" />
-                </div>
-                <h3 className="font-semibold text-xl mb-3">
-                  Transparent & Responsive
-                </h3>
-                <p className="text-gray-600">
-                  We believe in clear communication, zero guesswork, and
-                  proactive updates — so you always feel in control.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex justify-center mb-4">
-                  <Plane className="h-12 w-12 text-primary" />
-                </div>
-                <h3 className="font-semibold text-xl mb-3">Global Network</h3>
-                <p className="text-gray-600">
-                  Our extensive network across multiple countries ensures you
-                  get local insights and support wherever you go.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* What We Do */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 stats-intro-text">
-              What We Do
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto stats-intro-text">
-              Comprehensive services to support your entire study abroad journey
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <Plane className="h-8 w-8 text-primary flex-shrink-0" />
-                  <h3 className="font-semibold text-lg">Visa Assistance</h3>
-                </div>
-                <p className="text-gray-600">
-                  From SOPs to embassy appointments — we make the visa process
-                  smooth, strategic, and stress-free.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <GraduationCap className="h-8 w-8 text-primary flex-shrink-0" />
-                  <h3 className="font-semibold text-lg">
-                    University Selection
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex justify-center mb-4">
+                    <CheckCircle className="h-12 w-12 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-xl mb-3">
+                    Expertise You Can Trust
                   </h3>
-                </div>
-                <p className="text-gray-600">
-                  We help you shortlist institutions and programs based on your
-                  career goals and PR potential.
-                </p>
-              </CardContent>
-            </Card>
+                  <p className="text-gray-600">
+                    With a strong presence in New Zealand and India, our
+                    licensed advisers and trained counsellors navigate global
+                    immigration systems with ease.
+                  </p>
+                </CardContent>
+              </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <Globe className="h-8 w-8 text-primary flex-shrink-0" />
-                  <h3 className="font-semibold text-lg">IELTS Coaching</h3>
-                </div>
-                <p className="text-gray-600">
-                  Access expert language training and resources to clear your
-                  admission and visa requirements confidently.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <FileText className="h-8 w-8 text-primary flex-shrink-0" />
-                  <h3 className="font-semibold text-lg">
-                    Documentation Support
+              <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex justify-center mb-4">
+                    <GraduationCap className="h-12 w-12 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-xl mb-3">
+                    Tailored Guidance
                   </h3>
-                </div>
-                <p className="text-gray-600">
-                  We guide you in preparing all necessary financial documents
-                  for visa approval and university admission.
-                </p>
-              </CardContent>
-            </Card>
+                  <p className="text-gray-600">
+                    We understand that no two journeys are the same. Your goals,
+                    your budget, your background — everything is considered in
+                    our advice.
+                  </p>
+                </CardContent>
+              </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <Briefcase className="h-8 w-8 text-primary flex-shrink-0" />
-                  <h3 className="font-semibold text-lg">
-                    Pre-Departure Briefing
+              <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex justify-center mb-4">
+                    <Globe className="h-12 w-12 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-xl mb-3">
+                    End-to-End Support
                   </h3>
-                </div>
-                <p className="text-gray-600">
-                  Get prepared for life abroad — from housing and healthcare to
-                  weather, transport, and local etiquette.
-                </p>
-              </CardContent>
-            </Card>
+                  <p className="text-gray-600">
+                    From your first consultation to your first job abroad, we're
+                    with you — offering everything from visa filing to
+                    post-arrival support.
+                  </p>
+                </CardContent>
+              </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <Home className="h-8 w-8 text-primary flex-shrink-0" />
-                  <h3 className="font-semibold text-lg">
-                    Post-Arrival Services
+              <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex justify-center mb-4">
+                    <FileText className="h-12 w-12 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-xl mb-3">Proven Results</h3>
+                  <p className="text-gray-600">
+                    With thousands of visas approved and a 98% satisfaction
+                    rate, Transpacific is a name students trust across borders.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex justify-center mb-4">
+                    <HeartHandshake className="h-12 w-12 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-xl mb-3">
+                    Transparent & Responsive
                   </h3>
-                </div>
-                <p className="text-gray-600">
-                  Need airport pickup, city orientation, or help with local
-                  registrations? We've got you covered after you land too.
-                </p>
-              </CardContent>
-            </Card>
+                  <p className="text-gray-600">
+                    We believe in clear communication, zero guesswork, and
+                    proactive updates — so you always feel in control.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex justify-center mb-4">
+                    <Plane className="h-12 w-12 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-xl mb-3">Global Network</h3>
+                  <p className="text-gray-600">
+                    Our extensive network across multiple countries ensures you
+                    get local insights and support wherever you go.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA Section */}
-      {/* <section className="py-16 bg-primary/10">
+        {/* What We Do */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 stats-intro-text">
+                What We Do
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto stats-intro-text">
+                Comprehensive services to support your entire study abroad
+                journey
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Plane className="h-8 w-8 text-primary flex-shrink-0" />
+                    <h3 className="font-semibold text-lg">Visa Assistance</h3>
+                  </div>
+                  <p className="text-gray-600">
+                    From SOPs to embassy appointments — we make the visa process
+                    smooth, strategic, and stress-free.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4 mb-4">
+                    <GraduationCap className="h-8 w-8 text-primary flex-shrink-0" />
+                    <h3 className="font-semibold text-lg">
+                      University Selection
+                    </h3>
+                  </div>
+                  <p className="text-gray-600">
+                    We help you shortlist institutions and programs based on
+                    your career goals and PR potential.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Globe className="h-8 w-8 text-primary flex-shrink-0" />
+                    <h3 className="font-semibold text-lg">IELTS Coaching</h3>
+                  </div>
+                  <p className="text-gray-600">
+                    Access expert language training and resources to clear your
+                    admission and visa requirements confidently.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4 mb-4">
+                    <FileText className="h-8 w-8 text-primary flex-shrink-0" />
+                    <h3 className="font-semibold text-lg">
+                      Documentation Support
+                    </h3>
+                  </div>
+                  <p className="text-gray-600">
+                    We guide you in preparing all necessary financial documents
+                    for visa approval and university admission.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Briefcase className="h-8 w-8 text-primary flex-shrink-0" />
+                    <h3 className="font-semibold text-lg">
+                      Pre-Departure Briefing
+                    </h3>
+                  </div>
+                  <p className="text-gray-600">
+                    Get prepared for life abroad — from housing and healthcare
+                    to weather, transport, and local etiquette.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="p-6 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Home className="h-8 w-8 text-primary flex-shrink-0" />
+                    <h3 className="font-semibold text-lg">
+                      Post-Arrival Services
+                    </h3>
+                  </div>
+                  <p className="text-gray-600">
+                    Need airport pickup, city orientation, or help with local
+                    registrations? We've got you covered after you land too.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        {/* <section className="py-16 bg-primary/10">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Global Journey?
@@ -792,29 +817,29 @@ export default function AboutPage() {
         </div>
       </section> */}
 
-      <section className="section-padding bg-primary text-primary-foreground">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="font-galano text-3xl md:text-4xl font-bold">
-              Ready to Start Your Global Journey?
-            </h2>
-            <p className="text-xl opacity-90 stats-intro-text">
-              Book a free consultation with our experts and take the first step
-              toward your international education and career goals.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button
-                size="lg"
-                variant="secondary"
-                asChild
-                className="px-8 py-6 text-lg"
-              >
-                <Link href="/consultation" className="gap-2">
-                  Get Free Consultation
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </Button>
-              {/* <Button
+        <section className="section-padding bg-primary text-primary-foreground">
+          <div className="container-custom">
+            <div className="max-w-3xl mx-auto text-center space-y-6">
+              <h2 className="font-galano text-3xl md:text-4xl font-bold">
+                Ready to Start Your Global Journey?
+              </h2>
+              <p className="text-xl opacity-90 stats-intro-text">
+                Book a free consultation with our experts and take the first
+                step toward your international education and career goals.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  asChild
+                  className="px-8 py-6 text-lg"
+                >
+                  <Link href="/consultation" className="gap-2">
+                    Get Free Consultation
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </Button>
+                {/* <Button
                       size="lg"
                       variant="outline"
                       className="bg-primary-foreground/10 border-primary-foreground/20 hover:bg-primary-foreground/20 px-8 py-6 text-lg"
@@ -822,10 +847,11 @@ export default function AboutPage() {
                     >
                       <Link href="/apply">Apply to Study in Australia</Link>
                     </Button> */}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 }

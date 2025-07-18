@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle,
@@ -21,21 +21,50 @@ import {
   Shield,
   Leaf,
   Lightbulb,
-} from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent } from "@/components/ui/card"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import TestimonialCard from "@/components/testimonial-card"
-import ProcessStep from "@/components/process-step"
-import StatsCounter from "@/components/stats-counter"
-import Paragraph from "@/components/paragraph"
-import IrelandLogoCarousel from "@/components/ireland-logo-carousel"
-import CountryTestimonials from "@/components/country-testimonials"
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import TestimonialCard from "@/components/testimonial-card";
+import ProcessStep from "@/components/process-step";
+import StatsCounter from "@/components/stats-counter";
+import Paragraph from "@/components/paragraph";
+import IrelandLogoCarousel from "@/components/ireland-logo-carousel";
+import CountryTestimonials from "@/components/country-testimonials";
 
-const emeraldGreen = "#007848"
+const emeraldGreen = "#007848";
 
-import { metadata } from "./metadata"
+import { cannonicalUrls } from "@/lib/cannonical";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    " Study in Ireland from India | Tech-Focused Degrees & 2-Year Stay Back",
+  description:
+    " Apply to Ireland’s top universities with Transpacific. Enjoy globally recognized education, booming tech careers, and stay-back visa options.",
+  alternates: {
+    canonical: cannonicalUrls.ireland,
+  },
+  keywords: ["study abroad", "visa", "immigration"],
+  openGraph: {
+    title:
+      " Study in Ireland from India | Tech-Focused Degrees & 2-Year Stay Back",
+    description:
+      "Ireland offers future-ready education, stay-back visas, and booming tech careers — start your journey with Transpacific.",
+    url: cannonicalUrls.ireland,
+    type: "website",
+  },
+  twitter: {
+    title: "Study Abroad",
+    description: "Expert visa guidance",
+  },
+};
 
 export default function IrelandPage() {
   return (
@@ -45,15 +74,19 @@ export default function IrelandPage() {
         <div className="container-custom">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-6">
-              <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
+              <Badge
+                variant="outline"
+                className="px-3 py-1 text-sm bg-background dark:bg-muted"
+              >
                 Study in Ireland
               </Badge>
               <h1 className="font-galano text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
                 Where <span>Innovation</span> Meets Heritage
               </h1>
               <p className="text-xl text-muted-foreground">
-                Ranked among the world's safest and most future-ready countries, Ireland offers globally recognized
-                education, vibrant career opportunities, and a warm, welcoming culture.
+                Ranked among the world's safest and most future-ready countries,
+                Ireland offers globally recognized education, vibrant career
+                opportunities, and a warm, welcoming culture.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <Button size="lg" asChild>
@@ -70,7 +103,7 @@ export default function IrelandPage() {
             <div className="relative lg:h-[500px]">
               <div className="relative h-full w-full rounded-2xl overflow-hidden">
                 <img
-                 // src="/countries_hero/Ireland.jpeg"
+                  // src="/countries_hero/Ireland.jpeg"
                   src="/compressed/countries_hero/ire.png"
                   alt="Indian student at an Irish university campus"
                   className="h-full w-full object-cover"
@@ -85,9 +118,12 @@ export default function IrelandPage() {
       <section className="py-12 border-y bg-muted/30 dark:bg-muted/10">
         <div className="container-custom">
           <div className="text-center mb-8">
-            <h2 className="font-galano text-2xl md:text-3xl font-bold">Our Partner Universities in Ireland</h2>
+            <h2 className="font-galano text-2xl md:text-3xl font-bold">
+              Our Partner Universities in Ireland
+            </h2>
             <p className="text-muted-foreground mt-2 stats-intro-text">
-              We collaborate with Ireland's top universities to provide quality education
+              We collaborate with Ireland's top universities to provide quality
+              education
             </p>
           </div>
           <IrelandLogoCarousel />
@@ -95,7 +131,7 @@ export default function IrelandPage() {
       </section>
 
       {/* Featured Universities Section */}
-    {/*  <section className="section-padding bg-muted/30 dark:bg-muted/10 border-y">
+      {/*  <section className="section-padding bg-muted/30 dark:bg-muted/10 border-y">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
@@ -107,8 +143,8 @@ export default function IrelandPage() {
             </p>
           </div> */}
 
-          {/* DCU Featured Card */}
-        {/*  <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center mb-16">
+      {/* DCU Featured Card */}
+      {/*  <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center mb-16">
             <div>
               <div className="aspect-video w-full overflow-hidden rounded-xl border shadow-sm">
                 <img
@@ -152,8 +188,8 @@ export default function IrelandPage() {
             </div>
           </div> */}
 
-          {/* NCI Featured Card */}
-        {/*  <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+      {/* NCI Featured Card */}
+      {/*  <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="order-1 lg:order-2">
               <div className="aspect-video w-full overflow-hidden rounded-xl border shadow-sm">
                 <img
@@ -201,7 +237,7 @@ export default function IrelandPage() {
       </section> */}
 
       {/* Why Study in Ireland */}
-    {/*  <section className="section-padding">
+      {/*  <section className="section-padding">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
@@ -292,11 +328,18 @@ export default function IrelandPage() {
       <section className="section-padding bg-muted/30 dark:bg-muted/10 border-y">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
+            <Badge
+              variant="outline"
+              className="px-3 py-1 text-sm bg-background dark:bg-muted"
+            >
               Key Facts
             </Badge>
-            <h2 className="font-galano text-3xl md:text-4xl font-bold">Ireland at a Glance</h2>
-            <p className="text-xl text-muted-foreground stats-intro-text">Essential statistics about studying in Ireland</p>
+            <h2 className="font-galano text-3xl md:text-4xl font-bold">
+              Ireland at a Glance
+            </h2>
+            <p className="text-xl text-muted-foreground stats-intro-text">
+              Essential statistics about studying in Ireland
+            </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -304,30 +347,39 @@ export default function IrelandPage() {
               value={31}
               suffix="+"
               label="Public Universities & Institutes"
-              icon={<School className="h-6 w-6" style={{ color: emeraldGreen }} />}
+              icon={
+                <School className="h-6 w-6" style={{ color: emeraldGreen }} />
+              }
             />
             <StatsCounter
               value={1094}
               suffix="+"
               label="Accredited Study Programs"
-              icon={<BookOpen className="h-6 w-6" style={{ color: emeraldGreen }} />}
+              icon={
+                <BookOpen className="h-6 w-6" style={{ color: emeraldGreen }} />
+              }
             />
             <StatsCounter
               value={25}
               label="Days Avg. Visa Approval Time"
-              icon={<Clock className="h-6 w-6" style={{ color: emeraldGreen }} />}
+              icon={
+                <Clock className="h-6 w-6" style={{ color: emeraldGreen }} />
+              }
             />
             <StatsCounter
               value={20}
               prefix="Top "
               label="Global Education System"
-              icon={<Award className="h-6 w-6" style={{ color: emeraldGreen }} />}
+              icon={
+                <Award className="h-6 w-6" style={{ color: emeraldGreen }} />
+              }
             />
           </div>
 
           <div className="mt-12 text-center">
             <p className="text-lg text-muted-foreground stats-intro-text">
-              ✅ Perfect for tech, research, finance, and healthcare students seeking a smooth path to global careers.
+              ✅ Perfect for tech, research, finance, and healthcare students
+              seeking a smooth path to global careers.
             </p>
           </div>
         </div>
@@ -337,71 +389,86 @@ export default function IrelandPage() {
       <section id="universities" className="section-padding">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
+            <Badge
+              variant="outline"
+              className="px-3 py-1 text-sm bg-background dark:bg-muted"
+            >
               Education Institutions
             </Badge>
-            <h2 className="font-galano text-3xl md:text-4xl font-bold">Leading Universities in Ireland</h2>
-            <p className="text-xl text-muted-foreground stats-intro-text">Explore Ireland's prestigious universities and colleges</p>
+            <h2 className="font-galano text-3xl md:text-4xl font-bold">
+              Leading Universities in Ireland
+            </h2>
+            <p className="text-xl text-muted-foreground stats-intro-text">
+              Explore Ireland's prestigious universities and colleges
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 name: "Trinity College Dublin",
-               // image: "/ireland_universities/1.png",
+                // image: "/ireland_universities/1.png",
                 image: "/compressed/ireland/1-min.png",
                 logo: "/images/logos/trinity-college-dublin-logo.png",
                 link: "https://www.tcd.ie/",
-                description: "Ireland's oldest university, founded in 1592, renowned for research and innovation.",
+                description:
+                  "Ireland's oldest university, founded in 1592, renowned for research and innovation.",
               },
               {
                 name: "University College Dublin",
-                 image: "/compressed/ireland/2-min.png",
+                image: "/compressed/ireland/2-min.png",
                 logo: "/images/logos/ucd-logo.png",
                 link: "https://www.ucd.ie/",
-                description: "Ireland's largest university with strengths in research, innovation and teaching.",
+                description:
+                  "Ireland's largest university with strengths in research, innovation and teaching.",
               },
               {
                 name: "National University of Ireland, Galway",
-               image: "/compressed/ireland/3-min.png",
+                image: "/compressed/ireland/3-min.png",
                 logo: "/images/logos/nui-galway-logo.png",
                 link: "https://www.universityofgalway.ie/",
-                description: "Known for medical sciences, engineering, and arts programs.",
+                description:
+                  "Known for medical sciences, engineering, and arts programs.",
               },
               {
                 name: "University College Cork",
                 image: "/compressed/ireland/4-min.png",
                 logo: "/images/logos/ucc-logo.png",
                 link: "https://www.ucc.ie/en/",
-                description: "Excellent programs in medicine, business, and environmental sciences.",
+                description:
+                  "Excellent programs in medicine, business, and environmental sciences.",
               },
               {
                 name: "University of Limerick",
                 image: "/compressed/ireland/5-min.png",
                 logo: "/images/logos/ul-logo.png",
                 link: "https://www.ul.ie/",
-                description: "Strong in technology, business, and health sciences with co-op programs.",
+                description:
+                  "Strong in technology, business, and health sciences with co-op programs.",
               },
               {
                 name: "Maynooth University",
-                 image: "/compressed/ireland/6-min.png",
+                image: "/compressed/ireland/6-min.png",
                 logo: "/images/logos/maynooth-logo.png",
                 link: "https://www.maynoothuniversity.ie/",
-                description: "Ireland's fastest growing university with strengths in arts and sciences.",
+                description:
+                  "Ireland's fastest growing university with strengths in arts and sciences.",
               },
               {
                 name: "Technological University Dublin",
                 image: "/compressed/ireland/7-min.png",
                 logo: "/tu-dublin-logo.png",
-                link:"https://www.tudublin.ie/",
-                description: "Ireland's first technological university with strong industry connections.",
+                link: "https://www.tudublin.ie/",
+                description:
+                  "Ireland's first technological university with strong industry connections.",
               },
               {
                 name: "Royal College of Surgeons in Ireland",
                 image: "/compressed/ireland/8-min.png",
                 logo: "/rcsi-logo.png",
                 link: "https://www.rcsi.com/",
-                description: "Specialized in medical education and research with a global reputation.",
+                description:
+                  "Specialized in medical education and research with a global reputation.",
               },
               {
                 name: "Griffith College",
@@ -433,7 +500,9 @@ export default function IrelandPage() {
                 </div>
                 <CardContent className="p-6 space-y-2">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-galano text-xl font-semibold">{university.name}</h3>
+                    <h3 className="font-galano text-xl font-semibold">
+                      {university.name}
+                    </h3>
                     <div className="h-10 w-10 flex-shrink-0 bg-muted/20 rounded flex items-center justify-center p-1">
                       <img
                         src={university.logo || "/placeholder.svg"}
@@ -442,10 +511,16 @@ export default function IrelandPage() {
                       />
                     </div>
                   </div>
-                  <p className="text-muted-foreground">{university.description}</p>
+                  <p className="text-muted-foreground">
+                    {university.description}
+                  </p>
                   <div className="pt-4">
                     <Button size="sm" asChild>
-                      <a href={university.link} className="gap-2" target="_blank">
+                      <a
+                        href={university.link}
+                        className="gap-2"
+                        target="_blank"
+                      >
                         Visit Website
                         {/* <ExternalLink className="h-4 w-4" /> */}
                       </a>
@@ -471,7 +546,7 @@ export default function IrelandPage() {
       </section>
 
       {/* What Makes Ireland a Top Choice */}
-    {/*  <section className="section-padding bg-muted/30 dark:bg-muted/10 border-y">
+      {/*  <section className="section-padding bg-muted/30 dark:bg-muted/10 border-y">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
@@ -576,11 +651,18 @@ export default function IrelandPage() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
+            <Badge
+              variant="outline"
+              className="px-3 py-1 text-sm bg-background dark:bg-muted"
+            >
               Academic Programs
             </Badge>
-            <h2 className="font-galano text-3xl md:text-4xl font-bold">Most Popular Programs in Ireland</h2>
-            <p className="text-xl text-muted-foreground stats-intro-text">Discover in-demand programs with excellent career prospects</p>
+            <h2 className="font-galano text-3xl md:text-4xl font-bold">
+              Most Popular Programs in Ireland
+            </h2>
+            <p className="text-xl text-muted-foreground stats-intro-text">
+              Discover in-demand programs with excellent career prospects
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -589,10 +671,13 @@ export default function IrelandPage() {
                 <div className="bg-[#007848]/10 p-3 rounded-full w-fit">
                   <Code className="h-6 w-6" style={{ color: emeraldGreen }} />
                 </div>
-                <h3 className="font-galano text-xl font-semibold">Computer Science & AI</h3>
+                <h3 className="font-galano text-xl font-semibold">
+                  Computer Science & AI
+                </h3>
                 <p className="text-muted-foreground">
-                  Programs in AI, machine learning, data analytics, and software development with strong industry
-                  connections to tech giants based in Dublin.
+                  Programs in AI, machine learning, data analytics, and software
+                  development with strong industry connections to tech giants
+                  based in Dublin.
                 </p>
               </CardContent>
             </Card>
@@ -600,12 +685,18 @@ export default function IrelandPage() {
             <Card className="bg-background border-border/50 hover:shadow-md transition-shadow">
               <CardContent className="p-6 space-y-4">
                 <div className="bg-[#007848]/10 p-3 rounded-full w-fit">
-                  <BarChart className="h-6 w-6" style={{ color: emeraldGreen }} />
+                  <BarChart
+                    className="h-6 w-6"
+                    style={{ color: emeraldGreen }}
+                  />
                 </div>
-                <h3 className="font-galano text-xl font-semibold">Business Analytics & Finance</h3>
+                <h3 className="font-galano text-xl font-semibold">
+                  Business Analytics & Finance
+                </h3>
                 <p className="text-muted-foreground">
-                  Cutting-edge programs in business analytics, financial technology, and international business with
-                  internship opportunities.
+                  Cutting-edge programs in business analytics, financial
+                  technology, and international business with internship
+                  opportunities.
                 </p>
               </CardContent>
             </Card>
@@ -615,10 +706,13 @@ export default function IrelandPage() {
                 <div className="bg-[#007848]/10 p-3 rounded-full w-fit">
                   <Pill className="h-6 w-6" style={{ color: emeraldGreen }} />
                 </div>
-                <h3 className="font-galano text-xl font-semibold">Pharmaceutical & Biomedical Sciences</h3>
+                <h3 className="font-galano text-xl font-semibold">
+                  Pharmaceutical & Biomedical Sciences
+                </h3>
                 <p className="text-muted-foreground">
-                  World-class programs in pharmaceutical science, biotechnology, and medical research with connections
-                  to Ireland's thriving pharma industry.
+                  World-class programs in pharmaceutical science, biotechnology,
+                  and medical research with connections to Ireland's thriving
+                  pharma industry.
                 </p>
               </CardContent>
             </Card>
@@ -626,12 +720,18 @@ export default function IrelandPage() {
             <Card className="bg-background border-border/50 hover:shadow-md transition-shadow">
               <CardContent className="p-6 space-y-4">
                 <div className="bg-[#007848]/10 p-3 rounded-full w-fit">
-                  <LineChart className="h-6 w-6" style={{ color: emeraldGreen }} />
+                  <LineChart
+                    className="h-6 w-6"
+                    style={{ color: emeraldGreen }}
+                  />
                 </div>
-                <h3 className="font-galano text-xl font-semibold">Data Science & Machine Learning</h3>
+                <h3 className="font-galano text-xl font-semibold">
+                  Data Science & Machine Learning
+                </h3>
                 <p className="text-muted-foreground">
-                  Specialized programs in data science, machine learning, and artificial intelligence with strong links
-                  to Dublin's tech hub.
+                  Specialized programs in data science, machine learning, and
+                  artificial intelligence with strong links to Dublin's tech
+                  hub.
                 </p>
               </CardContent>
             </Card>
@@ -641,10 +741,13 @@ export default function IrelandPage() {
                 <div className="bg-[#007848]/10 p-3 rounded-full w-fit">
                   <Code2 className="h-6 w-6" style={{ color: emeraldGreen }} />
                 </div>
-                <h3 className="font-galano text-xl font-semibold">Investment Banking & Corporate Finance</h3>
+                <h3 className="font-galano text-xl font-semibold">
+                  Investment Banking & Corporate Finance
+                </h3>
                 <p className="text-muted-foreground">
-                  Practical programs in investment banking, corporate finance, and financial analysis with project-based
-                  learning and industry placements.
+                  Practical programs in investment banking, corporate finance,
+                  and financial analysis with project-based learning and
+                  industry placements.
                 </p>
               </CardContent>
             </Card>
@@ -652,7 +755,8 @@ export default function IrelandPage() {
 
           <div className="mt-12 text-center">
             <p className="text-lg text-muted-foreground stats-intro-text">
-              💡 Courses with co-op/internship options available for real-world experience.
+              💡 Courses with co-op/internship options available for real-world
+              experience.
             </p>
           </div>
         </div>
@@ -662,10 +766,15 @@ export default function IrelandPage() {
       <section className="section-padding bg-muted/30 dark:bg-muted/10 border-y">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
+            <Badge
+              variant="outline"
+              className="px-3 py-1 text-sm bg-background dark:bg-muted"
+            >
               Application Process
             </Badge>
-            <h2 className="font-galano text-3xl md:text-4xl font-bold">How We Help You Get There — Step-by-Step</h2>
+            <h2 className="font-galano text-3xl md:text-4xl font-bold">
+              How We Help You Get There — Step-by-Step
+            </h2>
             <p className="text-xl text-muted-foreground stats-intro-text">
               We guide you through every step of your study abroad journey
             </p>
@@ -701,7 +810,8 @@ export default function IrelandPage() {
 
           <div className="mt-12 text-center">
             <p className="text-lg text-muted-foreground mb-6 stats-intro-text">
-              🛡️ We're with you at every stage — from your first consultation to settling abroad.
+              🛡️ We're with you at every stage — from your first consultation to
+              settling abroad.
             </p>
             <Button size="lg" asChild>
               <Link href="/consultation" className="gap-2">
@@ -717,11 +827,18 @@ export default function IrelandPage() {
       <section className="section-padding">
         <div className="">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
+            <Badge
+              variant="outline"
+              className="px-3 py-1 text-sm bg-background dark:bg-muted"
+            >
               Student Voices
             </Badge>
-            <h2 className="font-galano text-3xl md:text-4xl font-bold">Student Story</h2>
-            <p className="text-xl text-muted-foreground stats-intro-text">Success stories from students who chose Ireland</p>
+            <h2 className="font-galano text-3xl md:text-4xl font-bold">
+              Student Story
+            </h2>
+            <p className="text-xl text-muted-foreground stats-intro-text">
+              Success stories from students who chose Ireland
+            </p>
           </div>
 
           <div className="mx-auto w-full">
@@ -768,12 +885,18 @@ export default function IrelandPage() {
       <section className="section-padding bg-muted/30 dark:bg-muted/10 border-y">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <Badge variant="outline" className="px-3 py-1 text-sm bg-background dark:bg-muted">
+            <Badge
+              variant="outline"
+              className="px-3 py-1 text-sm bg-background dark:bg-muted"
+            >
               Common Questions
             </Badge>
-            <h2 className="font-galano text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>
+            <h2 className="font-galano text-3xl md:text-4xl font-bold">
+              Frequently Asked Questions
+            </h2>
             <p className="text-xl text-muted-foreground stats-intro-text">
-              Find answers to frequently asked questions about studying in Ireland
+              Find answers to frequently asked questions about studying in
+              Ireland
             </p>
           </div>
 
@@ -785,18 +908,23 @@ export default function IrelandPage() {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   <Paragraph>
-                    Yes — 20 hours/week during term and 40 hours/week during breaks. This allows you to gain valuable
-                    work experience and supplement your income while studying.
+                    Yes — 20 hours/week during term and 40 hours/week during
+                    breaks. This allows you to gain valuable work experience and
+                    supplement your income while studying.
                   </Paragraph>
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-lg font-medium">What is the cost of living?</AccordionTrigger>
+                <AccordionTrigger className="text-lg font-medium">
+                  What is the cost of living?
+                </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   <Paragraph>
-                    Approx. €7,000–€12,000/year depending on city and lifestyle. Dublin tends to be more expensive than
-                    other Irish cities. Our counselors can help you find programs that match your budget.
+                    Approx. €7,000–€12,000/year depending on city and lifestyle.
+                    Dublin tends to be more expensive than other Irish cities.
+                    Our counselors can help you find programs that match your
+                    budget.
                   </Paragraph>
                 </AccordionContent>
               </AccordionItem>
@@ -807,9 +935,11 @@ export default function IrelandPage() {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   <Paragraph>
-                    Yes, both university and government-funded options are available. Many Irish universities offer
-                    scholarships for international students based on academic merit, specific country of origin, or
-                    field of study. The Government of Ireland also offers scholarships through programs like the
+                    Yes, both university and government-funded options are
+                    available. Many Irish universities offer scholarships for
+                    international students based on academic merit, specific
+                    country of origin, or field of study. The Government of
+                    Ireland also offers scholarships through programs like the
                     Government of Ireland International Education Scholarships.
                   </Paragraph>
                 </AccordionContent>
@@ -821,8 +951,9 @@ export default function IrelandPage() {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   <Paragraph>
-                    Yes. Degrees are accredited under QQI (Quality and Qualifications Ireland) and widely respected by
-                    employers worldwide, including in India.
+                    Yes. Degrees are accredited under QQI (Quality and
+                    Qualifications Ireland) and widely respected by employers
+                    worldwide, including in India.
                   </Paragraph>
                 </AccordionContent>
               </AccordionItem>
@@ -833,8 +964,10 @@ export default function IrelandPage() {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   <Paragraph>
-                    Most graduates receive a 1–2 year post-study work visa. The exact duration depends on your level of
-                    study - typically 12 months for Bachelor's graduates and 24 months for Master's and PhD graduates.
+                    Most graduates receive a 1–2 year post-study work visa. The
+                    exact duration depends on your level of study - typically 12
+                    months for Bachelor's graduates and 24 months for Master's
+                    and PhD graduates.
                   </Paragraph>
                 </AccordionContent>
               </AccordionItem>
@@ -842,7 +975,9 @@ export default function IrelandPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-lg text-muted-foreground mb-6 stats-intro-text">Still have questions?</p>
+            <p className="text-lg text-muted-foreground mb-6 stats-intro-text">
+              Still have questions?
+            </p>
             <Button size="lg" asChild>
               <Link href="/consultation" className="gap-2">
                 Talk to Our Counsellors
@@ -905,22 +1040,29 @@ export default function IrelandPage() {
         </div>
       </section> */}
 
-       <section className="section-padding bg-primary text-primary-foreground">
-              <div className="container-custom">
-                <div className="max-w-3xl mx-auto text-center space-y-6">
-                  <h2 className="font-galano text-3xl md:text-4xl font-bold">Ready to Study in Ireland?</h2>
-                  <p className="text-xl opacity-90 stats-intro-text">
-                    Thousands of students trust Transpacific to make their Ireland education dream come true — from start
-                    to finish.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                    <Button size="lg" variant="secondary" asChild className="px-8 py-6 text-lg">
-                      <Link href="/consultation" className="gap-2">
-                        Book Your Free Consultation
-                        <ArrowRight className="h-4 w-4" />
-                      </Link>
-                    </Button>
-                    {/* <Button
+      <section className="section-padding bg-primary text-primary-foreground">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <h2 className="font-galano text-3xl md:text-4xl font-bold">
+              Ready to Study in Ireland?
+            </h2>
+            <p className="text-xl opacity-90 stats-intro-text">
+              Thousands of students trust Transpacific to make their Ireland
+              education dream come true — from start to finish.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button
+                size="lg"
+                variant="secondary"
+                asChild
+                className="px-8 py-6 text-lg"
+              >
+                <Link href="/consultation" className="gap-2">
+                  Book Your Free Consultation
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
+              {/* <Button
                       size="lg"
                       variant="outline"
                       className="bg-primary-foreground/10 border-primary-foreground/20 hover:bg-primary-foreground/20 px-8 py-6 text-lg"
@@ -928,13 +1070,10 @@ export default function IrelandPage() {
                     >
                       <Link href="/apply">Apply to Study in Ireland</Link>
                     </Button> */}
-                  </div>
-                </div>
-              </div>
-            </section>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
-  )
+  );
 }
-
-
-

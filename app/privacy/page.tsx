@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
-import { withMetadataValidation } from "@/lib/metadata-utils"
+//import { withMetadataValidation } from "@/lib/metadata-utils"
 
-export const metadata: Metadata = withMetadataValidation({
+export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Data protection",
   keywords: ['privacy', 'data', 'protection'],
@@ -13,7 +13,7 @@ export const metadata: Metadata = withMetadataValidation({
     title: "Privacy Policy",
     description: "Data protection",
   }
-})
+}
 
 export default function PrivacyPage() {
   return (

@@ -4,6 +4,28 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import CountryCard from "@/components/country-card"
 
+import { cannonicalUrls } from "@/lib/cannonical"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Compare Top Study Abroad Destinations for Indian Students | Transpacific",
+  description: "Explore countries like Canada, UK, USA, Australia, Ireland & New Zealand. Find the best destination for your education and career goals with expert help.",
+  alternates: {
+    canonical: cannonicalUrls.countries,
+  },
+  keywords: ['study abroad', 'visa', 'immigration'],
+  openGraph: {
+   title: "Compare Top Study Abroad Destinations | Transpacific",
+    description: " Explore and compare countries for your education journey — Canada, UK, USA, Australia, Ireland, and New Zealand.",
+    url: cannonicalUrls.countries,
+    type: "website",
+  },
+  twitter: {
+    title: "Study Abroad",
+    description: "Expert visa guidance",
+  }
+}
+
 export default function CountriesPage() {
   return (
     <>

@@ -151,6 +151,30 @@ import { sendEmail } from "@/lib/send-mail"
 import { motion, AnimatePresence } from "framer-motion"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
+
+
+
+// import { cannonicalUrls } from "@/lib/cannonical"
+// import { Metadata } from "next"
+
+// export const metadata: Metadata = {
+//   title: "Contact Transpacific | Book Your Free Study Abroad Consultation",
+//   description: " Connect with our expert counsellors in India and New Zealand for personalized study abroad advice, visa support, and university selection.",
+//   alternates: {
+//     canonical: cannonicalUrls.contact,
+//   },
+//   keywords: ['study abroad', 'visa', 'immigration'],
+//   openGraph: {
+//     title: "Study Abroad",
+//     description: "Expert visa guidance",
+//   },
+//   twitter: {
+//     title: "Study Abroad",
+//     description: "Expert visa guidance",
+//   }
+// }
+
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     firstName: "",

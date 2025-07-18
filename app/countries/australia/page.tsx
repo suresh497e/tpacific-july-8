@@ -12,7 +12,30 @@ import { AustraliaLogoCarousel } from "@/components/australia-logo-carousel"
 import { UniversityLogo } from "@/components/university-logo"
 import CountryTestimonials from "@/components/country-testimonials"
 
-import { metadata } from "./metadata"
+// import { metadata } from "./metadata"
+
+
+import { cannonicalUrls } from "@/lib/cannonical"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Study in Australia from India | World-Class Universities & Visa Support",
+  description: "Apply to top Australian universities with expert visa guidance, co-op options, and PR opportunities. Start your career-focused education journey today.",
+  alternates: {
+    canonical: cannonicalUrls.australia,
+  },
+  keywords: ['study abroad', 'visa', 'immigration'],
+  openGraph: {
+   title: "Study in Australia from India | World-Class Universities & Visa Support",
+    description: "Get career-ready degrees with global recognition and flexible work-study options in Australia.",
+    url: cannonicalUrls.australia,
+    type: "website",
+  },
+  twitter: {
+    title: "Study Abroad",
+    description: "Expert visa guidance",
+  }
+}
 
 export default function AustraliaPage() {
   const australianUniversities = [

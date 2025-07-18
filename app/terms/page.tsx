@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
-import { withMetadataValidation } from "@/lib/metadata-utils"
+//import { withMetadataValidation } from "@/lib/metadata-utils"
 
-export const metadata: Metadata = withMetadataValidation({
+export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Legal terms",
   keywords: ['terms', 'legal', 'conditions'],
@@ -13,7 +13,7 @@ export const metadata: Metadata = withMetadataValidation({
     title: "Terms of Service",
     description: "Legal terms",
   }
-})
+}
 
 export default function TermsPage() {
   return (

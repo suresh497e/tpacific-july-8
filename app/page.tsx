@@ -11,24 +11,30 @@ import { DirectJustifier } from "@/components/direct-justifier"
 import GetInTouch from "@/components/get-in-touch"
 import { DebugTheme } from "@/components/debug-theme"
 import type { Metadata } from "next"
-import { withMetadataValidation } from "@/lib/metadata-utils"
+//import { withMetadataValidation } from "@/lib/metadata-utils"
 import Script from 'next/script'
 import StatsBanner from "@/components/icef"
+//import Head from 'next/head';
+import { cannonicalUrls } from "@/lib/cannonical"
 
-
-export const metadata: Metadata = withMetadataValidation({
-  title: "Study Abroad",
-  description: "Expert visa guidance",
+export const metadata: Metadata = {
+  title: "Study Abroad & Immigration Services for Indian Students | Transpacific",
+  description: "Trusted by thousands, Transpacific helps Indian students study in countries like Canada, UK, USA, Australia, and New Zealand with expert visa and admission support.",
+  alternates: {
+    canonical: cannonicalUrls.home,
+  },
   keywords: ['study abroad', 'visa', 'immigration'],
   openGraph: {
-    title: "Study Abroad",
-    description: "Expert visa guidance",
+    title: "Study Abroad & Immigration Services for Indian Students | Transpacific",
+    description: "Get expert help to study in Canada, UK, USA, Australia, Ireland & New Zealand. Trusted by thousands of Indian students since 2010.",
+    url: cannonicalUrls.home,
+    type: "website",
   },
   twitter: {
     title: "Study Abroad",
     description: "Expert visa guidance",
   }
-})
+}
 
 // Define more compact section classes
 const sectionClasses = {
@@ -38,6 +44,10 @@ const sectionClasses = {
 
 export default function Home() {
   return (
+    <>
+     {/* <Head>
+        <link rel="canonical" href={cannonicalUrls.home} />
+      </Head> */}
     <div className="flex flex-col">
       <Hero />
       <div className="relative h-20 md:h-40">
@@ -55,5 +65,6 @@ export default function Home() {
       <DirectJustifier />
       {/* <DebugTheme /> */}
     </div>
+    </>
   )
 }

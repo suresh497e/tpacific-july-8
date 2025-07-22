@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="space-y-6">
             <Link href="/" className="inline-block">
               <img
-                src="/images/transpacific-logo-new.png"
+                src="/bluelogo.png"
                 alt="Transpacific Immigration Services"
                 className="h-14 w-auto"
               />

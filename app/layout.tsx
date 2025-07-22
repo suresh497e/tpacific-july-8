@@ -9,6 +9,7 @@ import Footer from "@/components/footer"
 import { withSentenceSplitting } from "@/lib/with-sentence-splitting"
 import SentenceFormatter from "@/components/sentence-formatter"
 import { generateOrganizationSchema, generateWebsiteSchema, addSchemaToMetadata } from "@/lib/schema-utils"
+import WhatsAppButton from "@/components/whatsapp-button"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -90,6 +91,7 @@ function RootLayout({
           <div className="flex min-h-screen flex-col">
             <Navigation />
             <main className="flex-1">{children}</main>
+             <WhatsAppButton />
             <Footer />
           </div>
         </ThemeProvider>

@@ -41,6 +41,7 @@
 
 import Image from "next/image";
 import Script from "next/script";
+import CertifiedProfessionals2 from "./certified-professionals2";
 
 export default function StatsBanner() {
   return (
@@ -60,7 +61,7 @@ export default function StatsBanner() {
         {/* Stats */}
         <div className="hidden md:grid md:grid-cols-4 gap-6 text-center">
           <div>
-            <p className="text-4xl font-bold text-blue-900">10+</p>
+            <p className="text-4xl font-bold text-blue-900">12+</p>
             <p className="text-gray-600 md:text-lg">Years of Experience</p>
           </div>
           <div>
@@ -89,6 +90,7 @@ export default function StatsBanner() {
           />
           </div>
       </div> */}
+      
     </div>
   );
 }

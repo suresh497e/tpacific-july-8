@@ -333,7 +333,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-galano text-lg font-semibold">Call Us Directly</h3>
                     <p className="text-muted-foreground">
-                      New Zealand: +64 2102312849
+                      New Zealand: +91 91600 18125
                       <br />
                       India: +91 90379 93020
                     </p>
@@ -496,7 +496,17 @@ export default function ContactPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
+            {[{
+                country: "India",
+                location: "Kochi Office",
+                address: "3rd Floor, Abad Nucleus Mall, Poonithura, Maradu, Ernakulam, Kochi – 682034",
+                phone: "+91 90379 93020",
+                email: "kochi@tpacific.co.nz",
+                hours: "Mon–Sat: 10 AM – 7 PM",
+                mapUrl: "https://maps.google.com/?q=Abad+Nucleus+Mall,+Poonithura,+Maradu,+Ernakulam,+Kochi",
+                embedUrl:
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8234567890123!2d76.2234567!3d9.9654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d26b7a734c7%3A0x500ef6143a2d502!2sAbad%20Nucleus%20Mall%2C%20Poonithura%2C%20Maradu%2C%20Ernakulam%2C%20Kochi%2C%20Kerala%20682034%2C%20India!5e0!3m2!1sen!2sus!4v1621234567892!5m2!1sen!2sus",
+              },
               {
                 country: "New Zealand",
                 location: "Mount Eden",
@@ -519,17 +529,7 @@ export default function ContactPage() {
                 embedUrl:
                   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.8234567890123!2d174.7234567!3d-36.8654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47e7f2a734c8%3A0x500ef6143a2d501!2s587%20Sandringham%20Rd%2C%20Auckland%201025%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1621234567891!5m2!1sen!2sus",
               },
-              {
-                country: "India",
-                location: "Kochi Office",
-                address: "3rd Floor, Abad Nucleus Mall, Poonithura, Maradu, Ernakulam, Kochi – 682034",
-                phone: "+91 90379 93020",
-                email: "kochi@tpacific.co.nz",
-                hours: "Mon–Sat: 10 AM – 7 PM",
-                mapUrl: "https://maps.google.com/?q=Abad+Nucleus+Mall,+Poonithura,+Maradu,+Ernakulam,+Kochi",
-                embedUrl:
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8234567890123!2d76.2234567!3d9.9654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d26b7a734c7%3A0x500ef6143a2d502!2sAbad%20Nucleus%20Mall%2C%20Poonithura%2C%20Maradu%2C%20Ernakulam%2C%20Kochi%2C%20Kerala%20682034%2C%20India!5e0!3m2!1sen!2sus!4v1621234567892!5m2!1sen!2sus",
-              },
+              
               {
                 country: "India",
                 location: "Hyderabad (Kukatpally)",

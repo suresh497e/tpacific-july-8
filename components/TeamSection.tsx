@@ -12,7 +12,7 @@ export default function TeamSection() {
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Nagendar */}
-        <div className="bg-gray-50 rounded-xl shadow-sm p-6">
+        <div className="bg-gray-50 rounded-xl shadow-sm p-6 order-1">
           <Image
             src="/office/nagendar.jpg" 
             alt="Nagendar – Director & New Zealand Visa Expert"
@@ -38,12 +38,12 @@ export default function TeamSection() {
           <p className="text-gray-700 text-base mb-4">
             From selecting the right course to crafting a winning visa application, Nagendar ensures each student receives dedicated attention and clear guidance at every stage.
           </p>
-          <Link
+          {/* <Link
             href="/contact"
             className="inline-block text-blue-700 font-medium hover:underline"
           >
             👉 Learn More About Nagendar →
-          </Link>
+          </Link> */}
         </div>
 
         {/* Rohit */}
@@ -73,12 +73,12 @@ export default function TeamSection() {
           <p className="text-gray-700 text-base mb-4">
             Rohit has helped build one of the most trusted immigration consulting brands in Hyderabad and beyond. His unwavering commitment to ethical guidance and client success makes him a pillar in the international education space.
           </p>
-          <Link
+          {/* <Link
             href="/contact"
             className="inline-block text-blue-700 font-medium hover:underline"
           >
             👉 Get in Touch with Rohit →
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

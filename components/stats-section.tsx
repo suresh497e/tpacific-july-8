@@ -39,7 +39,7 @@ export default function StatsSection({ className }: StatsSectionProps) {
       const countriesEl = document.getElementById("countries-counter")
       const officesEl = document.getElementById("offices-counter")
 
-      if (yearsEl) counterAnimation(yearsEl, 10)
+      if (yearsEl) counterAnimation(yearsEl, 12)
       if (visasEl) counterAnimation(visasEl, 5369)
       if (countriesEl) counterAnimation(countriesEl, 9)
       if (officesEl) counterAnimation(officesEl, 4)

@@ -333,7 +333,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-galano text-lg font-semibold">Call Us Directly</h3>
                     <p className="text-muted-foreground">
-                      New Zealand: +91 91600 18125
+                      New Zealand: +6421 298 2690
                       <br />
                       India: +91 90379 93020
                     </p>

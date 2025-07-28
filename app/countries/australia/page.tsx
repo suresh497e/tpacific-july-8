@@ -577,14 +577,14 @@ export default function AustraliaPage() {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
+          {/* <div className="mt-12 text-center">
             <Button size="lg" asChild>
               <Link href="/consultation" className="gap-2">
                 Explore Programs
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -665,14 +665,14 @@ export default function AustraliaPage() {
             />
           </div>
 
-          <div className="mt-12 text-center">
-            <Button variant="outline" size="lg" asChild>
+          {/* <div className="mt-12 text-center"> */}
+            {/* <Button variant="outline" size="lg" asChild>
               <Link href="/testimonials" className="gap-2">
                 Explore More Student Experiences
                 <ArrowRight className="h-4 w-4" />
               </Link>
-            </Button>
-          </div>
+            </Button> */}
+          {/* </div> */}
         </div>
       </section>
 

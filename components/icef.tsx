@@ -69,8 +69,8 @@ export default function StatsBanner() {
             <p className="text-gray-600 md:text-lg">Countries</p>
           </div>
           <div>
-            <p className="text-4xl font-bold text-blue-900">4</p>
-            <p className="text-gray-600 md:text-lg">Branches</p>
+            <p className="text-4xl font-bold text-blue-900">5369+</p>
+            <p className="text-gray-600 md:text-lg">Visa Applications Approved</p>
           </div>
           <div>
             <p className="text-4xl font-bold text-blue-900">100%</p>

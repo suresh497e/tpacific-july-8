@@ -333,7 +333,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-galano text-lg font-semibold">Call Us Directly</h3>
                     <p className="text-muted-foreground">
-                      New Zealand: +6421 298 2690
+                      New Zealand: +64 220322746
                       <br />
                       India: +91 90379 93020
                     </p>
@@ -361,7 +361,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-galano text-lg font-semibold">Office Hours</h3>
                     <p className="text-muted-foreground">
-                      New Zealand: Mon–Fri, 9 AM – 6 PM
+                      New Zealand: Mon–Fri, 10 AM – 6:30 PM
                       <br />
                       India: Mon–Sat, 10 AM – 7 PM
                     </p>
@@ -384,7 +384,7 @@ export default function ContactPage() {
                       <CheckCircle className="h-4 w-4 text-green-600" />
                       <AlertTitle className="text-green-800 font-medium">Success!</AlertTitle>
                       <AlertDescription className="text-green-700">
-                        Your message has been sent successfully. We'll get back to you soon.
+                      We’ve received your message. Our team will get back to you shortly.
                       </AlertDescription>
                     </Alert>
                   </motion.div>
@@ -496,53 +496,8 @@ export default function ContactPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[{
-                country: "India",
-                location: "Kochi Office",
-                address: "3rd Floor, Abad Nucleus Mall, Poonithura, Maradu, Ernakulam, Kochi – 682034",
-                phone: "+91 90379 93020",
-                email: "kochi@tpacific.co.nz",
-                hours: "Mon–Sat: 10 AM – 7 PM",
-                mapUrl: "https://maps.google.com/?q=Abad+Nucleus+Mall,+Poonithura,+Maradu,+Ernakulam,+Kochi",
-                embedUrl:
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8234567890123!2d76.2234567!3d9.9654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d26b7a734c7%3A0x500ef6143a2d502!2sAbad%20Nucleus%20Mall%2C%20Poonithura%2C%20Maradu%2C%20Ernakulam%2C%20Kochi%2C%20Kerala%20682034%2C%20India!5e0!3m2!1sen!2sus!4v1621234567892!5m2!1sen!2sus",
-              },
-              {
-                country: "New Zealand",
-                location: "Mount Eden",
-                address: "Suite 6, Floor 1, 93 Dominion Road, Mount Eden, Auckland 1024",
-                phone: "+64 2102312849",
-                email: "info@tpacific.co.nz",
-                hours: "Mon–Fri: 9 AM – 6 PM",
-                mapUrl: "https://maps.google.com/?q=93+Dominion+Road,+Mount+Eden,+Auckland+1024",
-                embedUrl:
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.0611514925287!2d174.7437863!3d-36.8730368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47e7f2a734c7%3A0x500ef6143a2d500!2s93%20Dominion%20Rd%2C%20Mount%20Eden%2C%20Auckland%201024%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1621234567890!5m2!1sen!2sus",
-              },
-              {
-                country: "New Zealand",
-                location: "Sandringham",
-                address: "587 Sandringham Road, Auckland 1025",
-                phone: "+64 2102312849",
-                email: "auckland@tpacific.co.nz",
-                hours: "Mon–Fri: 9 AM – 6 PM",
-                mapUrl: "https://maps.google.com/?q=587+Sandringham+Road,+Auckland+1025",
-                embedUrl:
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.8234567890123!2d174.7234567!3d-36.8654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47e7f2a734c8%3A0x500ef6143a2d501!2s587%20Sandringham%20Rd%2C%20Auckland%201025%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1621234567891!5m2!1sen!2sus",
-              },
-              
-              {
-                country: "India",
-                location: "Hyderabad (Kukatpally)",
-                address:
-                  "3rd Floor, Dhanalakshmi Centre, Rd No. 2, above ICICI Bank, Kukatpally Housing Board, Hyderabad – 500072",
-                phone: "+91 99599 15680 | +91 98499 95490",
-                email: "hyd@tpacific.co.nz",
-                hours: "Mon–Sat: 10 AM – 7 PM",
-                mapUrl: "https://maps.google.com/?q=Dhanalakshmi+Centre,+Kukatpally+Housing+Board,+Hyderabad",
-                embedUrl:
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.8234567890123!2d78.3234567!3d17.4654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93a26b7a734c7%3A0x500ef6143a2d503!2sDhanalakshmi%20Centre%2C%20Kukatpally%20Housing%20Board%2C%20Hyderabad%2C%20Telangana%20500072%2C%20India!5e0!3m2!1sen!2sus!4v1621234567893!5m2!1sen!2sus",
-              },
-              {
+            {[
+               {
                 country: "India",
                 location: "Hyderabad (Dilsukhnagar)",
                 address:
@@ -555,6 +510,53 @@ export default function ContactPage() {
                 embedUrl:
                   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.234567890123!2d78.5234567!3d17.3654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99a26b7a734c7%3A0x500ef6143a2d505!2sSRR%20Complex%2C%20H-No-13-9-12%2C%20Opposite%20Konark%20Theatre%2C%20Lalitha%20Nagar%2C%20Dilsukhnagar%2C%20Hyderabad%2C%20Telangana%20500060%2C%20India!5e0!3m2!1sen!2sus!4v1621234567895!5m2!1sen!2sus",
               },
+              {
+                country: "India",
+                location: "Kochi Office",
+                address: "3rd Floor, Abad Nucleus Mall, Poonithura, Maradu, Ernakulam, Kochi – 682034",
+                phone: "+91 90379 93020",
+                email: "kochi@tpacific.co.nz",
+                hours: "Mon–Sat: 10 AM – 7 PM",
+                mapUrl: "https://maps.google.com/?q=Abad+Nucleus+Mall,+Poonithura,+Maradu,+Ernakulam,+Kochi",
+                embedUrl:
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8234567890123!2d76.2234567!3d9.9654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d26b7a734c7%3A0x500ef6143a2d502!2sAbad%20Nucleus%20Mall%2C%20Poonithura%2C%20Maradu%2C%20Ernakulam%2C%20Kochi%2C%20Kerala%20682034%2C%20India!5e0!3m2!1sen!2sus!4v1621234567892!5m2!1sen!2sus",
+              },
+              // {
+              //   country: "New Zealand",
+              //   location: "Mount Eden",
+              //   address: "Suite 6, Floor 1, 93 Dominion Road, Mount Eden, Auckland 1024",
+              //   phone: "+64 2102312849",
+              //   email: "info@tpacific.co.nz",
+              //   hours: "Mon–Fri: 9 AM – 6 PM",
+              //   mapUrl: "https://maps.google.com/?q=93+Dominion+Road,+Mount+Eden,+Auckland+1024",
+              //   embedUrl:
+              //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.0611514925287!2d174.7437863!3d-36.8730368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47e7f2a734c7%3A0x500ef6143a2d500!2s93%20Dominion%20Rd%2C%20Mount%20Eden%2C%20Auckland%201024%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1621234567890!5m2!1sen!2sus",
+              // },
+              {
+                country: "New Zealand",
+                location: "Sandringham",
+                address: "589 Sandringham Road, Sandringham, Auckland -1025",
+                phone: "+64 2102312849",
+                email: "auckland@tpacific.co.nz",
+                hours: "Mon–Fri: 9 AM – 6 PM",
+                mapUrl: "https://maps.google.com/?q=587+Sandringham+Road,+Auckland+1025",
+                embedUrl:
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.8234567890123!2d174.7234567!3d-36.8654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47e7f2a734c8%3A0x500ef6143a2d501!2s587%20Sandringham%20Rd%2C%20Auckland%201025%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1621234567891!5m2!1sen!2sus",
+              },
+              
+              // {
+              //   country: "India",
+              //   location: "Hyderabad (Kukatpally)",
+              //   address:
+              //     "3rd Floor, Dhanalakshmi Centre, Rd No. 2, above ICICI Bank, Kukatpally Housing Board, Hyderabad – 500072",
+              //   phone: "+91 99599 15680 | +91 98499 95490",
+              //   email: "hyd@tpacific.co.nz",
+              //   hours: "Mon–Sat: 10 AM – 7 PM",
+              //   mapUrl: "https://maps.google.com/?q=Dhanalakshmi+Centre,+Kukatpally+Housing+Board,+Hyderabad",
+              //   embedUrl:
+              //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.8234567890123!2d78.3234567!3d17.4654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93a26b7a734c7%3A0x500ef6143a2d503!2sDhanalakshmi%20Centre%2C%20Kukatpally%20Housing%20Board%2C%20Hyderabad%2C%20Telangana%20500072%2C%20India!5e0!3m2!1sen!2sus!4v1621234567893!5m2!1sen!2sus",
+              // },
+              
             ].map((office, index) => (
               <Card key={index} className="bg-background border-border/50 hover:shadow-md transition-shadow">
                 <CardContent className="p-6 space-y-4">

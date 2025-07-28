@@ -61,11 +61,11 @@ export default function CookiesPage() {
                 <div className="space-y-4">
                   <div className="border-l-4 border-green-400 pl-4">
                     <h3 className="font-semibold text-gray-900 mb-2">Strictly Necessary</h3>
-                    <p className="text-gray-700">Essential for basic site operations (e.g., login, shopping cart).</p>
+                    <p className="text-gray-700">Essential for basic site operations (login, shopping cart).</p>
                   </div>
                   <div className="border-l-4 border-blue-400 pl-4">
                     <h3 className="font-semibold text-gray-900 mb-2">Performance & Analytics</h3>
-                    <p className="text-gray-700">Collect anonymized usage statistics (e.g., via Google Analytics).</p>
+                    <p className="text-gray-700">Collect anonymized usage statistics (via Google Analytics).</p>
                   </div>
                   <div className="border-l-4 border-purple-400 pl-4">
                     <h3 className="font-semibold text-gray-900 mb-2">Functionality</h3>

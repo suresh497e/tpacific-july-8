@@ -14,13 +14,13 @@ export default function Footer() {
   return (
     <footer className="bg-muted/50 dark:bg-muted/20 border-t">
       <div className="container-custom py-16">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-6">
             <Link href="/" className="inline-block">
               <img
                 src="/bluelogo.png"
                 alt="Transpacific Immigration Services"
-                className="h-14 w-auto"
+                className="size-24  w-auto -ml-12"
               />
             </Link>
             <p className="text-muted-foreground max-w-xs">
@@ -32,21 +32,21 @@ export default function Footer() {
                 href="https://www.facebook.com/share/1EqsjVFMwt/"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-5 w-5" color="#202b42"  /> 
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
                 href="https://www.instagram.com/transpacific_india?igsh=Z3V2MTQ2bWc1ODNu"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-5 w-5" color="#202b42"  />
                 <span className="sr-only">Instagram</span>
               </Link>
               <Link
                 href="https://linkedin.com/in/transpacific-hyderabad-222627359"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-5 w-5" color="#202b42" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
             </div>
@@ -129,7 +129,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="font-galano text-lg font-semibold">Newsletter</h3>
             <p className="text-muted-foreground">
               Subscribe to receive updates on scholarships, visa changes, and
@@ -143,7 +143,7 @@ export default function Footer() {
               />
               <Button className="w-full">Subscribe</Button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-16 pt-8 border-t border-border/50">

@@ -47,7 +47,7 @@ export default function StatsSection({ className }: StatsSectionProps) {
   }, [isInView, hasAnimated])
 
   return (
-    <div className={`relative overflow-hidden ${className}`} ref={ref}>
+    <div className={`relative overflow-hidden   ${className}`} ref={ref}>
        
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -86,7 +86,7 @@ export default function StatsSection({ className }: StatsSectionProps) {
          
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:hidden">
           {/* Years of Experience */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}

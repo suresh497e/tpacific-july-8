@@ -8,7 +8,7 @@ export default function CertifiedProfessionals2() {
           Certified Professionals
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 bg-[#202b42]">
           {/* Card 1 */}
           <div className="rounded-2xl p-4 shadow-md flex items-center justify-center">
             <img

@@ -877,14 +877,14 @@ export default function IrelandPage() {
             />
           </div>
 
-          <div className="mt-12 text-center">
+          {/* <div className="mt-12 text-center">
             <Button variant="outline" size="lg" asChild>
               <Link href="/testimonials" className="gap-2">
                 Explore More Student Experiences
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 

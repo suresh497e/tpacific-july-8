@@ -18,7 +18,7 @@ export default function TeamSection() {
         {/* Nagendar */}
         <div className="bg-gray-50 rounded-xl shadow-sm p-6 order-1">
           <Image
-            src="/office/nagendar.jpg"
+            src="/nagendar_white_bg.png"
             alt="Nagendar – Director & New Zealand Visa Expert"
             width={500}
             height={400}
@@ -66,7 +66,7 @@ export default function TeamSection() {
             className="w-full h-80 object-contain rounded-lg mb-4"
           />
           <h3 className="text-xl font-semibold mb-1">
-            👨‍💼 Rohit Reddy Thamineni – Founder & CEO
+            Rohit Reddy Thamineni – Founder & CEO
           </h3>
           <p className="text-gray-600 mb-4">
             <strong> A registered migration agent (license no- 201800100)</strong>

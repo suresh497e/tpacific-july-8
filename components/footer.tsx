@@ -79,6 +79,12 @@ export default function Footer() {
               >
                 Free Consultation
               </Link>
+               <Link
+                href="/blogs"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                Blogs
+              </Link>
               <Link
                 href="/contact"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -115,7 +121,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <p>+91 90379 93020</p>
+                <p>+91 9397100200</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />

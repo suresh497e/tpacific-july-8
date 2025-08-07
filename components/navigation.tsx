@@ -204,42 +204,37 @@
 //   )
 // }
 
-
-
-
-
-
-
-
-
-
 //new version logo and menu swap in mobile
 
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { usePathname } from "next/navigation"
-import { Menu, X, ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { ModeToggle } from "@/components/mode-toggle"
-import { cn } from "@/lib/utils"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
+import { cn } from "@/lib/utils";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 
 const routes = [
   { name: "Home", path: "/" },
+  {
+    name: "New Zealand",
+    path: "/countries/new-zealand",
+  },
   {
     name: "Study Destinations",
     path: "/countries",
     dropdown: true,
     items: [
-      { name: "New Zealand", path: "/countries/new-zealand" },
+      // { name: "New Zealand", path: "/countries/new-zealand" },
       { name: "Australia", path: "/countries/australia" },
       { name: "Canada", path: "/countries/canada" },
       { name: "United Kingdom", path: "/countries/united-kingdom" },
@@ -247,27 +242,45 @@ const routes = [
       { name: "Ireland", path: "/countries/ireland" },
     ],
   },
-  { name: "About", path: "/about" },
+
+  {
+    name: "Services",
+    path: "#",
+    dropdown: true,
+    items: [
+      { name: "Admissions", path: "/services/admissions" },
+      { name: "Student Visas", path: "/services/student-visas" },
+      {  name: "Spouse, Child & Dependent Visas", path: "/services/partner-child-visas" },
+      { name: "Insurance Services", path: "/services/insurance-visas" },
+       { name: "SOPs, LORs & Documentation Help", path: "/services/sops" },
+        { name: "Pre-Departure & Post-Arrival Services", path: "/services/predeparture" },
+         { name: "Work Visas & Employer Sponsorship", path: "/services/work-visas" },
+         { name: "Skilled Migration & PR Pathways", path: "/services/skilled-migration" },
+     
+    ],
+  },
+
+  { name: "About Us", path: "/about" },
   { name: "Contact", path: "/contact" },
-]
+];
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10)
-    }
+      setScrolled(window.scrollY > 10);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
-    setIsOpen(false)
-  }, [pathname])
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <header
@@ -361,7 +374,11 @@ export default function Navigation() {
                 className="inline-flex items-center justify-center rounded-md p-3 text-foreground hover:bg-accent hover:text-accent-foreground"
                 aria-label="Toggle menu"
               >
-                {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                {isOpen ? (
+                  <X className="h-6 w-6" />
+                ) : (
+                  <Menu className="h-6 w-6" />
+                )}
               </button>
             </div>
 
@@ -434,5 +451,5 @@ export default function Navigation() {
         </div>
       )}
     </header>
-  )
+  );
 }

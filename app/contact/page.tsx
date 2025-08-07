@@ -335,7 +335,7 @@ export default function ContactPage() {
                     <p className="text-muted-foreground">
                       New Zealand: +64 21 298 2690
                       <br />
-                      India: +91 90379 93020
+                      India: +91 9397100200
                     </p>
                   </div>
                 </div>
@@ -503,7 +503,7 @@ export default function ContactPage() {
                 address:
                   "4th Floor, SRR Complex, H-No-13-9-12, Opposite Konark Theatre, Lalitha Nagar, Dilsukhnagar, Hyderabad – 500060",
                 phone: "+91 99599 15680 | +91 98499 95490",
-                email: "dilshuknagar@tpacific.co.nz",
+                email: "info@tpacific.co.nz",
                 hours: "Mon–Sat: 10 AM – 7 PM",
                 mapUrl:
                   "https://maps.google.com/?q=SRR+Complex,+H-No-13-9-12,+Opposite+Konark+Theatre,+Lalitha+Nagar,+Dilsukhnagar,+Hyderabad",
@@ -512,10 +512,10 @@ export default function ContactPage() {
               },
               {
                 country: "India",
-                location: "Kochi Office",
+                location: "Kochi (Ernakulam)",
                 address: "3rd Floor, Abad Nucleus Mall, Poonithura, Maradu, Ernakulam, Kochi – 682034",
                 phone: "+91 90379 93020",
-                email: "kochi@tpacific.co.nz",
+                email: " kerala@tpacific.co.nz",
                 hours: "Mon–Sat: 10 AM – 7 PM",
                 mapUrl: "https://maps.google.com/?q=Abad+Nucleus+Mall,+Poonithura,+Maradu,+Ernakulam,+Kochi",
                 embedUrl:
@@ -534,10 +534,10 @@ export default function ContactPage() {
               // },
               {
                 country: "New Zealand",
-                location: "Sandringham",
+                location: "Auckland (Sandringham)",
                 address: "589 Sandringham Road, Sandringham, Auckland -1025",
                 phone: "+64 2102312849",
-                email: "auckland@tpacific.co.nz",
+                email: "info@tpacific.co.nz",
                 hours: "Mon–Fri: 9 AM – 6 PM",
                 mapUrl: "https://maps.google.com/?q=587+Sandringham+Road,+Auckland+1025",
                 embedUrl:

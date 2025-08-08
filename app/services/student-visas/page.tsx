@@ -58,7 +58,7 @@ export default function AdmissionPage() {
   return (
     <div className="font-sans">
       {/* Hero */}
-      <section className="min-h-screen bg-gradient-to-r from-[#3c3c3c] to-[#445366] text-white flex flex-col lg:flex-row items-center px-6 lg:px-20 py-20 gap-10">
+      <section className="bg-primary text-white flex flex-col lg:flex-row items-center px-6 lg:px-20 py-8 gap-10">
         <div className="lg:w-1/3 space-y-6">
           {/* <p className="uppercase text-sm tracking-widest">
             Empowering migrants securing futures
@@ -68,7 +68,7 @@ export default function AdmissionPage() {
            <br />
             <h1 className="text-4xl font-bold leading-tight">Assistance</h1>
           </h1>
-          <button onClick={() => router.push("/contact")} className="mt-6 bg-primary text-white px-8 py-4 rounded-lg">
+          <button onClick={() => router.push("/contact")} className="mt-6 bg-primary text-white px-8 py-4 rounded-lg border">
             Contact Us
           </button>
         </div>

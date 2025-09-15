@@ -225,12 +225,47 @@ import {
 
 const routes = [
   { name: "Home", path: "/" },
+  // {
+  //   name: "New Zealand",
+  //   path: "/countries/new-zealand",
+  // },
   {
     name: "New Zealand",
-    path: "/countries/new-zealand",
+    path: "#",
+    dropdown: true,
+    items: [
+      { name: "Work Visas", path: "/newzealand/work-visa" },
+      { name: "Visitor Visas", path: "/newzealand/visitor-visa" },
+      {
+        name: "Family Visas",
+        path: "/newzealand/family-visa",
+      },
+      { name: "Resident Visas", path: "/newzealand/resident-visa" },
+      { name: "Business Visas", path: "/newzealand/business-visa" },
+      {
+        name: "Complex Immigration matter",
+        path: "/newzealand/complex-immigration-matter",
+      },
+      {
+        name: "Employer Accreditation",
+        path: "/newzealand/employer-accreditation",
+      },
+      {
+        name: "Job Checks",
+        path: "/newzealand/job-checks",
+      },
+      {
+        name: "AEWV",
+        path: "/newzealand/aewv",
+      },
+      {
+        name: "Accredition Renewal",
+        path: "/newzealand/accreditation-renewal",
+      },
+    ],
   },
   {
-    name: "Study Destinations",
+    name: "Other Destinations",
     path: "/countries",
     dropdown: true,
     items: [
@@ -240,27 +275,78 @@ const routes = [
       { name: "United Kingdom", path: "/countries/united-kingdom" },
       { name: "United States", path: "/countries/united-states" },
       { name: "Ireland", path: "/countries/ireland" },
+      { name: "Europe", path: "/countries/europe" },
     ],
   },
+
+  // {
+  //   name: "Services",
+  //   path: "#",
+  //   dropdown: true,
+  //   items: [
+  //     { name: "Admissions", path: "/services/admissions" },
+  //     { name: "Student Visas", path: "/services/student-visas" },
+  //     {
+  //       name: "Spouse, Child & Dependent Visas",
+  //       path: "/services/partner-child-visas",
+  //     },
+  //     { name: "Insurance Services", path: "/services/insurance-visas" },
+  //     { name: "SOPs, LORs & Documentation Help", path: "/services/sops" },
+  //     {
+  //       name: "Pre-Departure & Post-Arrival Services",
+  //       path: "/services/predeparture",
+  //     },
+  //     {
+  //       name: "Work Visas & Employer Sponsorship",
+  //       path: "/services/work-visas",
+  //     },
+  //     {
+  //       name: "Skilled Migration & PR Pathways",
+  //       path: "/services/skilled-migration",
+  //     },
+  //   ],
+  // },
 
   {
     name: "Services",
     path: "#",
     dropdown: true,
     items: [
-      { name: "Admissions", path: "/services/admissions" },
-      { name: "Student Visas", path: "/services/student-visas" },
-      {  name: "Spouse, Child & Dependent Visas", path: "/services/partner-child-visas" },
-      { name: "Insurance Services", path: "/services/insurance-visas" },
-       { name: "SOPs, LORs & Documentation Help", path: "/services/sops" },
-        { name: "Pre-Departure & Post-Arrival Services", path: "/services/predeparture" },
-         { name: "Work Visas & Employer Sponsorship", path: "/services/work-visas" },
-         { name: "Skilled Migration & PR Pathways", path: "/services/skilled-migration" },
-     
+      { name: "Career Counselling", path: "/services/career-counselling" },
+      {
+        name: "Course / University Selection",
+        path: "/services/university-selection",
+      },
+      {
+        name: "Financial Assistance",
+        path: "/services/financial-assistance",
+      },
+      {
+        name: "Scholarship Assistance",
+        path: "/services/scholarship-assistance",
+      },
+      { name: "Admission Guidance", path: "/services/admission-guidance" },
+      {
+        name: "Visa Documentation Guidance",
+        path: "/services/visa-guidance",
+      },
+      {
+        name: " Mock Visa Interviews",
+        path: "/services/mock-interviews",
+      },
+      {
+        name: "Pre Departure & Travel guidance",
+        path: "/services/travel-guidance",
+      },
+      {
+        name: "Accomodation",
+        path: "/services/accomodation",
+      },
     ],
   },
 
   { name: "About Us", path: "/about" },
+  { name: "Blogs", path: "/blogs" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -312,7 +398,7 @@ export default function Navigation() {
           <nav className="hidden md:flex items-center space-x-8">
             {routes.map((route) =>
               route.dropdown ? (
-                <DropdownMenu key={route.path}>
+                <DropdownMenu key={route.path + route.name}>
                   <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary">
                     <span className="flex items-center gap-1.5">
                       {route.icon}

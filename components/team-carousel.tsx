@@ -1,4 +1,3 @@
-
 // "use client"
 
 // import { useRef } from "react";
@@ -99,7 +98,7 @@
 //     description:
 //       "Team Lead - New Zealand(India)",
 //   },
- 
+
 // ];
 
 // export function TeamCarousel() {
@@ -173,30 +172,78 @@
 //   );
 // }
 
-
-
-
-
-
-
-"use client"
+"use client";
 
 import Image from "next/image";
 
 const teamMembers = [
-  { name: "M. Prabhakar Reddy", img: "/team/team1.jpeg", description: "Student Advisor - New Zealand" },
-  { name: "G. Naveen Kumar Reddy", img: "/team/team2.jpeg", description: "Process Associate - USA" },
-  { name: "J. Sharada", img: "/team/team3.jpeg", description: "Manager - Sales" },
-  { name: "Ch. Prathima Sai", img: "/team/team4.jpeg", description: "Student Advisor - New Zealand" },
-  { name: "N. Nikhil Reddy", img: "/team/team5.jpeg", description: "Student Advisor - New Zealand" },
-  { name: "T. Siri Kishan", img: "/team/team6.jpeg", description: "Process Associate - UK" },
-  { name: "G - Gangareddy", img: "/team/team14.jpeg", description: "Director - Marketing" },
-  { name: "A. Ashwini", img: "/team/team8.jpg", description: "Finance - Advisor" },
-  { name: "G. Mahesh Reddy", img: "/team/team9.jpeg", description: "Business Development Manager" },
-  { name: "B. Preethi", img: "/team/team10.jpeg", description: "Team Lead - Uk" },
-  { name: "S. Sai Shravan Reddy", img: "/team/team11.jpeg", description: "Team Lead - USA" },
-  { name: "S. Nagasree", img: "/team/team12.jpeg", description: "Senior Student Advisor - UK" },
-  { name: "Sai Kiran Narayan", img: "/team/team13.jpeg", description: "Team Lead - New Zealand(India)" },
+  {
+    name: "Sai Kiran Narayan",
+    img: "/team/team13.jpeg",
+    description: "Team Lead - New Zealand(India)",
+  },
+  {
+    name: "B. Preethi",
+    img: "/team/team10.jpeg",
+    description: "Team Lead - Uk",
+  },
+  {
+    name: "S. Sai Shravan Reddy",
+    img: "/team/team11.jpeg",
+    description: "Team Lead - USA",
+  },
+  {
+    name: "J. Sharada",
+    img: "/team/team3.jpeg",
+    description: "Manager - Sales",
+  },
+   {
+    name: "G - Gangareddy",
+    img: "/team/team14.jpeg",
+    description: "Director - Marketing",
+  },
+  {
+    name: "M. Prabhakar Reddy",
+    img: "/team/team1.jpeg",
+    description: "Student Advisor - New Zealand",
+  },
+  {
+    name: "G. Naveen Kumar Reddy",
+    img: "/team/team2.jpeg",
+    description: "Process Associate - USA",
+  },
+
+  {
+    name: "Ch. Prathima Sai",
+    img: "/team/team4.jpeg",
+    description: "Student Advisor - New Zealand",
+  },
+  {
+    name: "N. Nikhil Reddy",
+    img: "/team/team5.jpeg",
+    description: "Student Advisor - New Zealand",
+  },
+  {
+    name: "T. Siri Kishan",
+    img: "/team/team6.jpeg",
+    description: "Process Associate - UK",
+  },
+  {
+    name: "A. Ashwini",
+    img: "/team/team8.jpg",
+    description: "Finance - Advisor",
+  },
+  {
+    name: "G. Mahesh Reddy",
+    img: "/team/team9.jpeg",
+    description: "Business Development Manager",
+  },
+
+  {
+    name: "S. Nagasree",
+    img: "/team/team12.jpeg",
+    description: "Senior Student Advisor - UK",
+  },
 ];
 
 // Duplicate the array to create an infinite loop illusion
@@ -222,11 +269,15 @@ export function TeamCarousel() {
                   alt={member.name}
                   width={192}
                   height={192}
-                  className="object-cover w-full h-full"
+                  className="object-contain w-full h-full"
                 />
               </div>
-              <h3 className="text-white font-medium text-lg text-center stats-intro-text">{member.name}</h3>
-              <p className="text-sm text-center stats-intro-text">{member.description}</p>
+              <h3 className="text-white font-medium text-lg text-center stats-intro-text">
+                {member.name}
+              </h3>
+              <p className="text-sm text-center stats-intro-text">
+                {member.description}
+              </p>
             </div>
           ))}
         </div>

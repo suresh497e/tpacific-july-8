@@ -272,8 +272,10 @@ export function UniversityPageTemplate({
                               title: "MSc Computer Science, Dublin City University",
                               image: "/images/female-student-testimonial.png",
                             },
+                           
                           ]}
                           //countryColor={emeraldGreen}
+                          // testimonials={testimonial}
                         />
                       </div>
           </div>

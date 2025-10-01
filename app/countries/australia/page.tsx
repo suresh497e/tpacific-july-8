@@ -641,24 +641,25 @@ export default function AustraliaPage() {
               testimonials={[
                 {
                   quote:
-                    "Ireland gave me more than a degree. It gave me direction, confidence, and my first international job. Transpacific made every step smooth and stress-free.",
-                  name: "Kavya R.",
-                  title: "MSc in Data Analytics, Trinity College Dublin",
-                  image: "/images/indian-student-testimonial.png",
+                    "Australia gave me a balance of world-class academics and vibrant student life. Transpacific helped me with my visa, accommodation, and settling in smoothly.",
+                  name: "Rohit S.",
+                  title: "Master of Engineering, University of Sydney",
+                  image: "/images/australia-student1.png",
                 },
                 {
                   quote:
-                    "The cultural experience in Ireland was incredible. I made friends from all over the world while studying at UCD. Transpacific's guidance on accommodation and part-time work opportunities was invaluable.",
-                  name: "Arjun P.",
-                  title: "MBA, University College Dublin",
-                  image: "/images/male-student-testimonial.png",
+                    "I loved studying in Melbourne! The multicultural environment boosted my confidence, and Transpacific guided me with part-time job opportunities.",
+                  name: "Ananya P.",
+                  title: "MBA, Monash University",
+                  image: "/images/australia-student2.png",
                 },
                 {
                   quote:
-                    "As a tech student, Ireland's Silicon Docks provided amazing networking opportunities. I secured an internship at a major tech company during my studies, which led to a full-time role after graduation.",
-                  name: "Meera S.",
-                  title: "MSc Computer Science, Dublin City University",
-                  image: "/images/female-student-testimonial.png",
+                    "With Transpacific’s support, I secured a scholarship and got placed in a top IT firm after graduation. Australia truly opened global opportunities for me.",
+                  name: "Karan M.",
+                  title:
+                    "Master of Information Technology, University of Melbourne",
+                  image: "/images/australia-student3.png",
                 },
               ]}
               // countryColor={emeraldGreen}
@@ -666,7 +667,7 @@ export default function AustraliaPage() {
           </div>
 
           {/* <div className="mt-12 text-center"> */}
-            {/* <Button variant="outline" size="lg" asChild>
+          {/* <Button variant="outline" size="lg" asChild>
               <Link href="/testimonials" className="gap-2">
                 Explore More Student Experiences
                 <ArrowRight className="h-4 w-4" />

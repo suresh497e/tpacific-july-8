@@ -201,26 +201,84 @@ export default function ContactPage() {
   }
   
   // Handle form submission
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   setIsSubmitting(true)
+    
+  //   try {
+  //     const result = await sendEmail({
+  //       to: "info@tpacific.co.nz",
+  //       subject: "New Contact Form Submission",
+  //       html: `
+  //         <h2>New Contact Form Submission</h2>
+  //         <p><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
+  //         <p><strong>Email:</strong> ${formData.email}</p>
+  //         <p><strong>Phone:</strong> ${formData.phone}</p>
+  //         <p><strong>Service:</strong> ${formData.service}</p>
+  //         <p><strong>Message:</strong> ${formData.message}</p>
+  //       `,
+  //     });
+
+  //     if (result.success) {
+  //       console.log("Email sent successfully")
+  //       setIsSubmitted(true)
+  //       // Reset form data
+  //       setFormData({
+  //         firstName: "",
+  //         lastName: "",
+  //         email: "",
+  //         phone: "",
+  //         service: "",
+  //         message: ""
+  //       })
+        
+  //       // Auto-hide success message after 5 seconds
+  //       setTimeout(() => {
+  //         setIsSubmitted(false)
+  //       }, 5000)
+  //     } else {
+  //       console.error("Failed to send email")
+  //       alert("There was an error sending your message. Please try again later.")
+  //     }
+  //   } catch (error) {
+  //     console.error("Error sending email:", error)
+  //     alert("There was an error sending your message. Please try again later.")
+  //   } finally {
+  //     setIsSubmitting(false)
+  //   }
+  // }
+
+  //handle form submission top webhook
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
     
     try {
-      const result = await sendEmail({
-        to: "info@tpacific.co.nz",
-        subject: "New Contact Form Submission",
-        html: `
-          <h2>New Contact Form Submission</h2>
-          <p><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
-          <p><strong>Email:</strong> ${formData.email}</p>
-          <p><strong>Phone:</strong> ${formData.phone}</p>
-          <p><strong>Service:</strong> ${formData.service}</p>
-          <p><strong>Message:</strong> ${formData.message}</p>
-        `,
-      });
+      // const result = await sendEmail({
+      //   to: "info@tpacific.co.nz",
+      //   subject: "New Contact Form Submission",
+      //   html: `
+      //     <h2>New Contact Form Submission</h2>
+      //     <p><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
+      //     <p><strong>Email:</strong> ${formData.email}</p>
+      //     <p><strong>Phone:</strong> ${formData.phone}</p>
+      //     <p><strong>Service:</strong> ${formData.service}</p>
+      //     <p><strong>Message:</strong> ${formData.message}</p>
+      //   `,
+      // });
+      const res= await fetch("https://automator.maitreyalabs.com/webhook/ca6fc92b-cc55-47c2-ad67-0ad17cdccf61", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      })
 
-      if (result.success) {
-        console.log("Email sent successfully")
+
+      const result = await res.json()
+
+      if (result.message==="Workflow was started") {
+        console.log("data sent succesfully")
         setIsSubmitted(true)
         // Reset form data
         setFormData({
@@ -496,7 +554,18 @@ export default function ContactPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
+            {[{
+                country: "New Zealand",
+                location: "Auckland (Sandringham)",
+                address: "589 Sandringham Road, Sandringham, Auckland -1025",
+                phone: "+64 2102312849",
+                email: "info@tpacific.co.nz",
+                hours: "Mon–Fri: 9 AM – 6 PM",
+                mapUrl: "https://maps.google.com/?q=587+Sandringham+Road,+Auckland+1025",
+                embedUrl:
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.8234567890123!2d174.7234567!3d-36.8654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47e7f2a734c8%3A0x500ef6143a2d501!2s587%20Sandringham%20Rd%2C%20Auckland%201025%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1621234567891!5m2!1sen!2sus",
+              },
+              
                {
                 country: "India",
                 location: "Hyderabad (Dilsukhnagar)",
@@ -532,17 +601,6 @@ export default function ContactPage() {
               //   embedUrl:
               //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.0611514925287!2d174.7437863!3d-36.8730368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47e7f2a734c7%3A0x500ef6143a2d500!2s93%20Dominion%20Rd%2C%20Mount%20Eden%2C%20Auckland%201024%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1621234567890!5m2!1sen!2sus",
               // },
-              {
-                country: "New Zealand",
-                location: "Auckland (Sandringham)",
-                address: "589 Sandringham Road, Sandringham, Auckland -1025",
-                phone: "+64 2102312849",
-                email: "info@tpacific.co.nz",
-                hours: "Mon–Fri: 9 AM – 6 PM",
-                mapUrl: "https://maps.google.com/?q=587+Sandringham+Road,+Auckland+1025",
-                embedUrl:
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.8234567890123!2d174.7234567!3d-36.8654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47e7f2a734c8%3A0x500ef6143a2d501!2s587%20Sandringham%20Rd%2C%20Auckland%201025%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1621234567891!5m2!1sen!2sus",
-              },
               
               // {
               //   country: "India",
@@ -564,6 +622,11 @@ export default function ContactPage() {
                     <Badge variant="outline" className="bg-background dark:bg-muted">
                       {office.country}
                     </Badge>
+                    {office.country === "New Zealand" && (
+                      <Badge variant="outline" className="bg-background dark:bg-muted mr-auto ml-2">
+                       Head Office
+                      </Badge>
+                    )}
                     <div className="bg-primary/10 p-2 rounded-full">
                       <MapPin className="h-4 w-4 text-primary" />
                     </div>

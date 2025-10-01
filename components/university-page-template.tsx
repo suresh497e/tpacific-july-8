@@ -250,30 +250,7 @@ export function UniversityPageTemplate({
             </div> */}
              <div className="mx-auto w-full">
                         <CountryTestimonials
-                          testimonials={[
-                            {
-                              quote:
-                                "Ireland gave me more than a degree. It gave me direction, confidence, and my first international job. Transpacific made every step smooth and stress-free.",
-                              name: "Kavya R.",
-                              title: "MSc in Data Analytics, Trinity College Dublin",
-                              image: "/images/indian-student-testimonial.png",
-                            },
-                            {
-                              quote:
-                                "The cultural experience in Ireland was incredible. I made friends from all over the world while studying at UCD. Transpacific's guidance on accommodation and part-time work opportunities was invaluable.",
-                              name: "Arjun P.",
-                              title: "MBA, University College Dublin",
-                              image: "/images/male-student-testimonial.png",
-                            },
-                            {
-                              quote:
-                                "As a tech student, Ireland's Silicon Docks provided amazing networking opportunities. I secured an internship at a major tech company during my studies, which led to a full-time role after graduation.",
-                              name: "Meera S.",
-                              title: "MSc Computer Science, Dublin City University",
-                              image: "/images/female-student-testimonial.png",
-                            },
-                           
-                          ]}
+                          testimonials={testimonial}
                           //countryColor={emeraldGreen}
                           // testimonials={testimonial}
                         />

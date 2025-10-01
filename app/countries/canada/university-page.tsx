@@ -1,5 +1,5 @@
-import { GraduationCap, Briefcase, BookOpen, Globe } from "lucide-react"
-import UniversityPageTemplate from "@/components/university-page-template"
+import { GraduationCap, Briefcase, BookOpen, Globe } from "lucide-react";
+import UniversityPageTemplate from "@/components/university-page-template";
 
 export default function CanadaUniversityPage() {
   // Define Canadian universities with campus images
@@ -9,27 +9,30 @@ export default function CanadaUniversityPage() {
       logo: "/images/logos/university-of-toronto.png",
       //image: "/canada_universities/1.png",
       image: "/compressed/canada/1-min.png",
-      description: "Canada's top-ranked university with strengths across all disciplines and research areas.",
+      description:
+        "Canada's top-ranked university with strengths across all disciplines and research areas.",
       link: "https://www.utoronto.ca/",
     },
     {
       name: "University of British Columbia",
       logo: "/images/logos/university-of-british-columbia.png",
-       image: "/compressed/canada/2-min.png",
-      description: "A global center for research and teaching with a stunning campus in Vancouver.",
+      image: "/compressed/canada/2-min.png",
+      description:
+        "A global center for research and teaching with a stunning campus in Vancouver.",
       link: "https://www.ubc.ca/",
     },
     {
       name: "McGill University",
       logo: "/images/logos/mcgill-university.png",
-       image: "/compressed/canada/3-min.png",
-      description: "One of Canada's oldest universities with a reputation for excellence in medicine and research.",
+      image: "/compressed/canada/3-min.png",
+      description:
+        "One of Canada's oldest universities with a reputation for excellence in medicine and research.",
       link: "https://www.mcgill.ca/",
     },
     {
       name: "Queen's University",
       logo: "/images/logos/queens-university.png",
-       image: "/compressed/canada/4-min.png",
+      image: "/compressed/canada/4-min.png",
       description:
         "One of Canada's oldest universities with a reputation for academic excellence and student experience.",
       link: "https://www.queensu.ca/",
@@ -38,59 +41,67 @@ export default function CanadaUniversityPage() {
       name: "University of Alberta",
       logo: "/images/logos/university-of-alberta.png",
       image: "/compressed/canada/5-min.png",
-      description: "Known for research excellence in energy, health sciences, and artificial intelligence.",
+      description:
+        "Known for research excellence in energy, health sciences, and artificial intelligence.",
       link: "https://www.ualberta.ca/",
     },
     {
       name: "Université de Montréal",
       logo: "/images/logos/universite-de-montreal.png",
-       image: "/compressed/canada/6-min.png",
-      description: "A leading French-language university with strengths in medicine, law, and sciences.",
+      image: "/compressed/canada/6-min.png",
+      description:
+        "A leading French-language university with strengths in medicine, law, and sciences.",
       link: "https://www.umontreal.ca/",
     },
     {
       name: "University of Calgary",
       logo: "/images/logos/university-of-calgary.png",
-       image: "/compressed/canada/7-min.png",
-      description: "A research-intensive university with strong ties to the energy and healthcare sectors.",
+      image: "/compressed/canada/7-min.png",
+      description:
+        "A research-intensive university with strong ties to the energy and healthcare sectors.",
       link: "https://www.ucalgary.ca/",
     },
     {
       name: "University of Waterloo",
       logo: "/images/logos/university-of-waterloo.png",
-       image: "/compressed/canada/8-min.png",
-      description: "Known for engineering, computer science, and the world's largest co-op program.",
+      image: "/compressed/canada/8-min.png",
+      description:
+        "Known for engineering, computer science, and the world's largest co-op program.",
       link: "https://uwaterloo.ca/",
     },
     {
       name: "Western University",
       logo: "/images/logos/western-university.png",
-       image: "/compressed/canada/9-min.png",
-      description: "A comprehensive university with a beautiful campus and strong business and medical programs.",
+      image: "/compressed/canada/9-min.png",
+      description:
+        "A comprehensive university with a beautiful campus and strong business and medical programs.",
       link: "https://www.uwo.ca/",
     },
     {
       name: "University of Ottawa",
       logo: "/images/logos/university-of-ottawa.png",
-       image: "/compressed/canada/10-min.png",
-      description: "Canada's largest bilingual university with strong programs in law, medicine, and social sciences.",
+      image: "/compressed/canada/10-min.png",
+      description:
+        "Canada's largest bilingual university with strong programs in law, medicine, and social sciences.",
       link: "https://www.uottawa.ca/",
     },
     {
       name: "Dalhousie University",
       logo: "/images/logos/dalhousie-university.png",
-       image: "/compressed/canada/11-min.png",
-      description: "Atlantic Canada's leading research university with strengths in marine sciences and health.",
+      image: "/compressed/canada/11-min.png",
+      description:
+        "Atlantic Canada's leading research university with strengths in marine sciences and health.",
       link: "https://www.dal.ca/",
     },
     {
       name: "Simon Fraser University",
       logo: "/images/logos/simon-fraser-university.png",
-       image: "/compressed/canada/12-min.png",
-      description: "Known for innovation and interdisciplinary programs with campuses throughout British Columbia.",
+      image: "/compressed/canada/12-min.png",
+      description:
+        "Known for innovation and interdisciplinary programs with campuses throughout British Columbia.",
       link: "https://www.sfu.ca/",
     },
-  ]
+  ];
 
   // Define Canadian programs
   const programs = [
@@ -130,7 +141,7 @@ export default function CanadaUniversityPage() {
         "Develop critical thinking and creative skills in Canada's diverse and multicultural academic environment.",
       icon: <BookOpen className="h-6 w-6 text-[#e11d48]" />,
     },
-  ]
+  ];
 
   // Define Canadian FAQs
   const faqs = [
@@ -159,7 +170,7 @@ export default function CanadaUniversityPage() {
       answer:
         "Yes, many Canadian universities offer scholarships specifically for international students. The Canadian government also offers scholarships through programs like the Vanier Canada Graduate Scholarships and the Canada-CARICOM Leadership Scholarships.",
     },
-  ]
+  ];
 
   return (
     <UniversityPageTemplate
@@ -169,14 +180,30 @@ export default function CanadaUniversityPage() {
       heroImage="/compressed/countries_hero/can.png"
       universities={universities}
       programs={programs}
-      testimonial={{
-        quote:
-          "Studying in Canada was the best decision I made. The quality of education, multicultural environment, and post-graduation opportunities have set me up for success. Transpacific made the entire process smooth from application to arrival.",
-        name: "Vikram Mehta",
-        title: "MSc Computer Science, University of Toronto",
-        image: "/placeholder.svg?height=100&width=100&text=VM",
-      }}
+      testimonial={[
+        {
+          quote:
+            "Canada’s friendly culture and academic excellence made my journey rewarding. Transpacific guided me through every step, including PR options.",
+          name: "Pooja R.",
+          title: "MBA, University of Toronto",
+          image: "/images/canada-student1.png",
+        },
+        {
+          quote:
+            "I appreciated Transpacific’s advice on co-op programs, which led to my internship at a leading bank in Canada.",
+          name: "Manoj K.",
+          title: "MSc Finance, McGill University",
+          image: "/images/canada-student2.png",
+        },
+        {
+          quote:
+            "The career workshops Transpacific suggested were game-changers. I landed a part-time job and transitioned to a full-time role post-graduation.",
+          name: "Divya S.",
+          title: "MEng Electrical Engineering, University of British Columbia",
+          image: "/images/canada-student3.png",
+        },
+      ]}
       faqs={faqs}
     />
-  )
+  );
 }

@@ -72,7 +72,7 @@ export default function Home() {
         <OfficeAnnouncement className={sectionClasses.white} />
         <FrustrationsSection className={sectionClasses.gray} />
         <DestinationsSection className={sectionClasses.white} />
-        <TeamCarousel />
+        {/* <TeamCarousel /> */}
         <TestimonialsSection className={sectionClasses.gray} />
         {/* <NewsletterSection className={sectionClasses.white} /> */}
         <ConsultationCTA />

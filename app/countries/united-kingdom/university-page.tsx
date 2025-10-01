@@ -1,5 +1,5 @@
-import { GraduationCap, Briefcase, BookOpen } from "lucide-react"
-import UniversityPageTemplate from "@/components/university-page-template"
+import { GraduationCap, Briefcase, BookOpen } from "lucide-react";
+import UniversityPageTemplate from "@/components/university-page-template";
 
 export default function UKUniversityPage() {
   // Define UK universities
@@ -8,7 +8,7 @@ export default function UKUniversityPage() {
       name: "University of Oxford",
       logo: "/images/logos/oxford-logo.png",
       //image: "/uk_universities/1.png",
-        image: "/compressed/uk/1-min.png",
+      image: "/compressed/uk/1-min.png",
       description:
         "One of the world's oldest and most prestigious universities, known for academic excellence and research.",
       link: "https://www.ox.ac.uk/",
@@ -17,66 +17,75 @@ export default function UKUniversityPage() {
       name: "University of Cambridge",
       logo: "/images/logos/cambridge-logo.png",
       image: "/compressed/uk/2-min.png",
-      description: "A collegiate research university with a rich history and world-renowned reputation for excellence.",
+      description:
+        "A collegiate research university with a rich history and world-renowned reputation for excellence.",
       link: "https://www.cam.ac.uk/",
     },
     {
       name: "Imperial College London",
       logo: "/images/logos/imperial-logo.png",
       image: "/compressed/uk/3-min.png",
-      description: "A world-class university focused on science, engineering, medicine, and business.",
+      description:
+        "A world-class university focused on science, engineering, medicine, and business.",
       link: "https://www.imperial.ac.uk/",
     },
     {
       name: "University College London",
       logo: "/images/logos/ucl-logo.png",
       image: "/compressed/uk/4-min.png",
-      description: "A diverse, global university with a progressive approach to research and education.",
+      description:
+        "A diverse, global university with a progressive approach to research and education.",
       link: "https://www.ucl.ac.uk/",
     },
     {
       name: "London School of Economics",
       logo: "/images/logos/lse-logo.png",
       image: "/compressed/uk/5-min.png",
-      description: "Specializing in social sciences, economics, politics, and related disciplines.",
+      description:
+        "Specializing in social sciences, economics, politics, and related disciplines.",
       link: "https://www.lse.ac.uk/",
     },
     {
       name: "University of Edinburgh",
       logo: "/images/logos/edinburgh-logo.png",
       image: "/compressed/uk/6-min.png",
-      description: "One of Scotland's ancient universities with strengths across humanities and sciences.",
+      description:
+        "One of Scotland's ancient universities with strengths across humanities and sciences.",
       link: "https://www.ed.ac.uk/",
     },
     {
       name: "King's College London",
       logo: "/images/logos/kings-logo.png",
       image: "/compressed/uk/7-min.png",
-      description: "A research-led university known for medicine, law, humanities, and social sciences.",
+      description:
+        "A research-led university known for medicine, law, humanities, and social sciences.",
       link: "https://www.kcl.ac.uk/",
     },
     {
       name: "University of Manchester",
       logo: "/images/logos/manchester-logo.png",
-       image: "/compressed/uk/8-min.png",
-      description: "A large research university with a strong focus on innovation and social responsibility.",
+      image: "/compressed/uk/8-min.png",
+      description:
+        "A large research university with a strong focus on innovation and social responsibility.",
       link: "https://www.manchester.ac.uk/",
     },
     {
       name: "University of Bristol",
       logo: "/images/logos/bristol-logo.png",
-       image: "/compressed/uk/9-min.png",
-      description: "A research-intensive university with a reputation for creativity and innovation.",
+      image: "/compressed/uk/9-min.png",
+      description:
+        "A research-intensive university with a reputation for creativity and innovation.",
       link: "https://www.bristol.ac.uk/",
     },
     {
       name: "University of Warwick",
       logo: "/images/logos/warwick-logo.png",
-       image: "/compressed/uk/10-min.png",
-      description: "A modern research university known for business, economics, and interdisciplinary programs.",
+      image: "/compressed/uk/10-min.png",
+      description:
+        "A modern research university known for business, economics, and interdisciplinary programs.",
       link: "https://warwick.ac.uk/",
     },
-  ]
+  ];
 
   // Define UK programs
   const programs = [
@@ -88,7 +97,8 @@ export default function UKUniversityPage() {
     },
     {
       title: "Engineering & Technology",
-      description: "Study cutting-edge technologies and engineering disciplines in one of the world's innovation hubs.",
+      description:
+        "Study cutting-edge technologies and engineering disciplines in one of the world's innovation hubs.",
       icon: <GraduationCap className="h-6 w-6 text-[#2563eb]" />,
     },
     {
@@ -115,7 +125,7 @@ export default function UKUniversityPage() {
         "Join the UK's thriving tech sector with cutting-edge programs in computer science, data science, and artificial intelligence.",
       icon: <GraduationCap className="h-6 w-6 text-[#2563eb]" />,
     },
-  ]
+  ];
 
   // Define UK FAQs
   const faqs = [
@@ -144,7 +154,7 @@ export default function UKUniversityPage() {
       answer:
         "Yes, many UK universities offer scholarships specifically for international students. The British government also offers Chevening Scholarships for outstanding students with leadership potential.",
     },
-  ]
+  ];
 
   // Custom UK logo carousel component
   const UKLogoCarousel = () => (
@@ -163,25 +173,41 @@ export default function UKUniversityPage() {
         </div>
       ))}
     </div>
-  )
+  );
 
   return (
     <UniversityPageTemplate
       country="United Kingdom"
       countryColor="#2563eb"
-     // heroImage="/countries_hero/UK.jpeg"
+      // heroImage="/countries_hero/UK.jpeg"
       heroImage="/compressed/countries_hero/uk.png"
       universities={universities}
       programs={programs}
       logoCarousel={<UKLogoCarousel />}
-      testimonial={{
-        quote:
-          "Studying in the UK was transformative. The academic rigor, diverse perspectives, and networking opportunities have shaped my career path. Transpacific made the application process seamless.",
-        name: "Rahul Sharma",
-        title: "MSc International Business, University of Manchester",
-        image: "/placeholder.svg?height=100&width=100&text=RS",
-      }}
+      testimonial={[
+        {
+          quote:
+            "The UK’s academic culture encouraged critical thinking and research. Transpacific helped me choose the perfect course and university.",
+          name: "Sneha R.",
+          title: "MSc International Business, University of Warwick",
+          image: "/images/uk-student1.png",
+        },
+        {
+          quote:
+            "Living in London was a dream. With Transpacific’s guidance on internships, I landed a role at a global consultancy before graduating.",
+          name: "Arjun K.",
+          title: "MSc Finance, London School of Economics",
+          image: "/images/uk-student2.png",
+        },
+        {
+          quote:
+            "From visa support to pre-departure sessions, Transpacific made my UK journey stress-free. Today, I’m thriving in the marketing industry.",
+          name: "Megha S.",
+          title: "MA Marketing, University of Manchester",
+          image: "/images/uk-student3.png",
+        },
+      ]}
       faqs={faqs}
     />
-  )
+  );
 }

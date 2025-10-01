@@ -109,6 +109,15 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="font-galano text-lg font-semibold">Contact Us</h3>
             <div className="space-y-4">
+               <div className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-medium">Auckland, New Zealand</p>
+                  <p className="text-sm text-muted-foreground">
+                    589 Sandringham Road, Sandringham, Auckland -1025 {" "}
+                  </p>
+                </div>
+              </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div>

@@ -271,9 +271,10 @@ const routes = [
     items: [
       // { name: "New Zealand", path: "/countries/new-zealand" },
       { name: "Australia", path: "/countries/australia" },
-      { name: "Canada", path: "/countries/canada" },
       { name: "United Kingdom", path: "/countries/united-kingdom" },
       { name: "United States", path: "/countries/united-states" },
+      { name: "Canada", path: "/countries/canada" },
+
       { name: "Ireland", path: "/countries/ireland" },
       { name: "Europe", path: "/countries/europe" },
     ],
@@ -346,7 +347,8 @@ const routes = [
   },
 
   { name: "About Us", path: "/about" },
-  { name: "Blogs", path: "/blogs" },
+  // { name: "Blogs", path: "/blogs" },
+  {name: "Blogs", path: "https://blog.tpacific.co.nz/"},
   { name: "Contact", path: "/contact" },
 ];
 

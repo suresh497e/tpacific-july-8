@@ -20,7 +20,7 @@ export default function Footer() {
               <img
                 src="/bluelogo.png"
                 alt="Transpacific Immigration Services"
-                className="size-24  w-auto -ml-12"
+                className="size-32  w-auto -ml-12"
               />
             </Link>
             <p className="text-muted-foreground max-w-xs">

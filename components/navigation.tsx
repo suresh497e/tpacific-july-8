@@ -350,6 +350,7 @@ const routes = [
   // { name: "Blogs", path: "/blogs" },
   {name: "Blogs", path: "https://blog.tpacific.co.nz/"},
   { name: "Contact", path: "/contact" },
+  {name: "accomodation", path:"accomodation"}
 ];
 
 export default function Navigation() {
@@ -379,7 +380,7 @@ export default function Navigation() {
           : "bg-transparent"
       )}
     >
-      <div className="container-custom">
+      <div className="container-custom-navbar"> 
         <div className="flex h-20 items-center justify-between">
           {/* Desktop View: Logo left, nav center, cta right (unchanged) */}
           <div className="hidden md:flex items-center">

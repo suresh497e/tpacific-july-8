@@ -69,7 +69,10 @@ export default function TeamSection() {
             Rohit Reddy Thamineni – Founder & CEO
           </h3>
           <p className="text-gray-600 mb-4">
-            <strong> A registered migration agent (license no- 201800100)</strong>
+            <strong>
+              {" "}
+              license immigration advisor (license no- 201800100)
+            </strong>
           </p>
           <h6 className="text-gray-700 text-base leading-relaxed mb-4">
             Rohit brings over 15 years of leadership in global education and
@@ -81,7 +84,7 @@ export default function TeamSection() {
             <li>✅ 15+ Years of Experience in Immigration</li>
             <li>✅ Founder & CEO of Transpacific Immigration Services Ltd.</li>
             <li>✅ Registered Migration Agent (MARN: 2418408)</li>
-            <li>✅ Collaborator with Auckland Institute of Studies</li>
+            {/* <li>✅ Collaborator with Auckland Institute of Studies</li> */}
           </ul>
           <p className="text-gray-700 text-base mb-4">
             Rohit has helped build one of the most trusted immigration

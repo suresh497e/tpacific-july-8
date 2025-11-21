@@ -18,6 +18,8 @@ import StatsBanner from "@/components/icef";
 import { cannonicalUrls } from "@/lib/cannonical";
 import { baseUrl } from "@/lib/baseUrl";
 import { TeamCarousel } from "@/components/team-carousel";
+// import Script from 'next/script'
+
 
 export const metadata: Metadata = {
   title:
@@ -79,7 +81,24 @@ export default function Home() {
         <GetInTouch className={sectionClasses.white} />
         <DirectJustifier />
         {/* <DebugTheme /> */}
+        {/* script */}
+        {/* <div
+          id="root-ul"
+          data-widgetId="YOUR_WIDGET_ID"
+          data-city="london"
+          data-primaryColor="#111"
+          data-fontColor="#333"
+          data-iconColor="#111"
+        /> */}
+        {/* <script src="https://d3hk5c2fo9op52.cloudfront.net/widget.js"></script> */}
+        {/* <Script src="https://d3hk5c2fo9op52.cloudfront.net/widget.js" /> */}
       </div>
     </>
   );
 }
+
+
+
+
+
+

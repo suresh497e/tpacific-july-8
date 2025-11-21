@@ -177,6 +177,10 @@ html {
   @apply container px-4 md:px-6 max-w-7xl mx-auto;
 }
 
+.container-custom-navbar {
+  @apply container px-4 md:px-4 max-w-full mx-auto;
+}
+
 /* Sentence styling - each sentence on a new line with justified text */
 p {
   text-align: justify;

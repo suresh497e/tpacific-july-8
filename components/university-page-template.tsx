@@ -28,7 +28,7 @@ interface Program {
 }
 
 interface Testimonial {
-  quote: string
+  quote?: string
   name: string
   title: string
   image: string

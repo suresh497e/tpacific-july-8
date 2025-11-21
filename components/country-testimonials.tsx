@@ -32,6 +32,7 @@ export default function CountryTestimonials({ testimonials, countryColor = "#007
   
   // Get initials for avatar fallback
   const getInitials = (name: string) => {
+    if(!name) return
     return name
       .split(" ")
       .map((n) => n[0])
@@ -57,15 +58,15 @@ export default function CountryTestimonials({ testimonials, countryColor = "#007
               >
                 <div className="mb-6">
                   <QuoteIcon className="h-12 w-12 mx-auto opacity-20 mb-4" />
-                  <p className="text-xl  stats-intro-text  italic mb-6"><span className="max-w-xl mx-auto text-center">"{testimonials[currentIndex].quote}"</span></p>
+                  <p className="text-xl  stats-intro-text  italic mb-6"><span className="max-w-xl mx-auto text-center">"{testimonials[currentIndex]?.quote}"</span></p>
                   <div className="flex items-center justify-center">
                     <Avatar className="w-16 h-16 border-2 border-white/20 mr-4">
-                      <AvatarImage src={testimonials[currentIndex].image} alt={testimonials[currentIndex].name} />
-                      <AvatarFallback>{getInitials(testimonials[currentIndex].name)}</AvatarFallback>
+                      <AvatarImage src={testimonials[currentIndex]?.image} alt={testimonials[currentIndex]?.name} />
+                      <AvatarFallback>{getInitials(testimonials[currentIndex]?.name)}</AvatarFallback>
                     </Avatar>
                     <div className="text-left">
-                      <p className="font-semibold">{testimonials[currentIndex].name}</p>
-                      <p className="text-sm opacity-80">{testimonials[currentIndex].title}</p>
+                      <p className="font-semibold">{testimonials[currentIndex]?.name}</p>
+                      <p className="text-sm opacity-80">{testimonials[currentIndex]?.title}</p>
                     </div>
                   </div>
                 </div>
@@ -75,7 +76,7 @@ export default function CountryTestimonials({ testimonials, countryColor = "#007
           
           {/* Pagination dots */}
           <div className="flex justify-center gap-2 mt-4">
-            {testimonials.map((_, index) => (
+            { testimonials.length > 0 && testimonials?.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}

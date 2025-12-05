@@ -177,11 +177,11 @@
 import Image from "next/image";
 
 const teamMembers = [
-  {
-    name: "Sai Kiran Narayan",
-    img: "/team/team13.jpeg",
-    description: "Team Lead - New Zealand(India)",
-  },
+  // {
+  //   name: "Sai Kiran Narayan",
+  //   img: "/team/team13.jpeg",
+  //   description: "Team Lead - New Zealand(India)",
+  // },
   {
     name: "B. Preethi",
     img: "/team/team10.jpeg",
@@ -197,21 +197,26 @@ const teamMembers = [
     img: "/team/team3.jpeg",
     description: "Manager - Sales",
   },
-   {
-    name: "G - Gangareddy",
-    img: "/team/team14.jpeg",
-    description: "Director - Marketing",
+  //  {
+  //   name: "G - Gangareddy",
+  //   img: "/team/team14.jpeg",
+  //   description: "Director - Marketing",
+  // },
+  {
+    name: "Komal Sharma",
+    img: "/team/komal.jpg",
+    description: "Australia Country Manager",
   },
   {
     name: "M. Prabhakar Reddy",
     img: "/team/team1.jpeg",
     description: "Student Advisor - New Zealand",
   },
-  {
-    name: "G. Naveen Kumar Reddy",
-    img: "/team/team2.jpeg",
-    description: "Process Associate - USA",
-  },
+  // {
+  //   name: "G. Naveen Kumar Reddy",
+  //   img: "/team/team2.jpeg",
+  //   description: "Process Associate - USA",
+  // },
 
   {
     name: "Ch. Prathima Sai",
@@ -233,11 +238,11 @@ const teamMembers = [
     img: "/team/team8.jpg",
     description: "Finance - Advisor",
   },
-  {
-    name: "G. Mahesh Reddy",
-    img: "/team/team9.jpeg",
-    description: "Business Development Manager",
-  },
+  // {
+  //   name: "G. Mahesh Reddy",
+  //   img: "/team/team9.jpeg",
+  //   description: "Business Development Manager",
+  // },
 
   {
     name: "S. Nagasree",

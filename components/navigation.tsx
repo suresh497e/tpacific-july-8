@@ -350,7 +350,7 @@ const routes = [
   // { name: "Blogs", path: "/blogs" },
   {name: "Blogs", path: "https://blog.tpacific.co.nz/"},
   { name: "Contact", path: "/contact" },
-  {name: "accomodation", path:"accomodation"}
+  {name: "Accomodation", path:"accomodation"}
 ];
 
 export default function Navigation() {

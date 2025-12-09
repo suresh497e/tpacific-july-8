@@ -162,11 +162,11 @@ export default function AccommodationPage() {
 
           <div
           id="root-ul"
-          data-widgetId="6904aee0ed9b4c06637b5124"
+          data-widgetid="6904aee0ed9b4c06637b5124"
           data-city="london"
-          data-primaryColor="#111"
-          data-fontColor="#333"
-          data-iconColor="#111"
+          data-primarycolor="#111"
+          data-fontcolor="#333"
+          data-iconcolor="#111"
         /> 
         {/* <script src="https://d3hk5c2fo9op52.cloudfront.net/widget.js"></script> */}
          <Script src="https://d3hk5c2fo9op52.cloudfront.net/widget.js" /> 

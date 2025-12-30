@@ -301,19 +301,19 @@ export default function AustraliaPage() {
       <section className="section-padding bg-muted/30 dark:bg-muted/10 border-y">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-            <Badge
+          {/*}  <Badge
               variant="outline"
               className="px-3 py-1 text-sm bg-background dark:bg-muted"
             >
               Our Partners
-            </Badge>
+            </Badge> */}
             <h2 className="font-galano text-3xl md:text-4xl font-bold">
-              Our Partner Universities in Australia
+              Popular Universities in Australia
             </h2>
-            <p className="text-xl text-muted-foreground stats-intro-text">
+            {/* <p className="text-xl text-muted-foreground stats-intro-text">
               We work with Australia's leading institutions to provide you with
               the best education opportunities
-            </p>
+            </p> */}
           </div>
 
           <div className="bg-background rounded-lg p-6 shadow-sm">

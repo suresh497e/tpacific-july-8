@@ -118,6 +118,10 @@ export default function Footer() {
                   </p>
                 </div>
               </div>
+               <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-primary shrink-0" />
+                <p>+64225557852</p>
+              </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div>

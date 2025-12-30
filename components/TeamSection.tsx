@@ -71,7 +71,7 @@ export default function TeamSection() {
           <p className="text-gray-600 mb-4">
             <strong>
               {" "}
-              license immigration advisor (license no- 201800100)
+              Licensed immigration advisor (license no- 201800100)
             </strong>
           </p>
           <h6 className="text-gray-700 text-base leading-relaxed mb-4">
@@ -82,7 +82,7 @@ export default function TeamSection() {
           </h6>
           <ul className="list-disc text-base text-gray-700 pl-5 mb-4">
             <li>✅ 15+ Years of Experience in Immigration</li>
-            <li>✅ Founder & CEO of Transpacific Immigration Services Ltd.</li>
+            <li>✅ Founder of Transpacific Immigration Services Ltd.</li>
             <li>✅ Registered Migration Agent (MARN: 2418408)</li>
             {/* <li>✅ Collaborator with Auckland Institute of Studies</li> */}
           </ul>

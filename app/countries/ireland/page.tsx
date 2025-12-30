@@ -126,12 +126,12 @@ export default function IrelandPage() {
         <div className="container-custom">
           <div className="text-center mb-8">
             <h2 className="font-galano text-2xl md:text-3xl font-bold">
-              Our Partner Universities in Ireland
+              Popular Universities in Ireland
             </h2>
-            <p className="text-muted-foreground mt-2 stats-intro-text">
+            {/* <p className="text-muted-foreground mt-2 stats-intro-text">
               We collaborate with Ireland's top universities to provide quality
               education
-            </p>
+            </p> */}
           </div>
           <IrelandLogoCarousel />
         </div>

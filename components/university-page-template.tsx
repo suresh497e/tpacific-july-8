@@ -112,8 +112,8 @@ export function UniversityPageTemplate({
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-2">Our Partner Universities in {country}</h2>
-            <p className="text-gray-600 stats-intro-text">Transpacific has partnerships with top universities across {country}</p>
+            <h2 className="text-3xl font-bold mb-2">Popular Universities in {country}</h2>
+            {/* <p className="text-gray-600 stats-intro-text">Transpacific has partnerships with top universities across {country}</p> */}
           </div>
           <UniversityLogoCarousel universities={universities} speed={40} />
         </div>

@@ -571,7 +571,7 @@ export default function ContactPage() {
                 location: "Hyderabad (Dilsukhnagar)",
                 address:
                   "4th Floor, SRR Complex, H-No-13-9-12, Opposite Konark Theatre, Lalitha Nagar, Dilsukhnagar, Hyderabad – 500060",
-                phone: "+91 99599 15680 | +91 98499 95490",
+                phone: "+91 99599 15680",
                 email: "info@tpacific.co.nz",
                 hours: "Mon–Sat: 10 AM – 7 PM",
                 mapUrl:
